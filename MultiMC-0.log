@@ -1,0 +1,173 @@
+    0.016 D MultiMC 5, (c) 2013-2015 MultiMC Contributors
+    0.016 D Version                    :  "0.4.6"
+    0.016 D Git commit                 :  "a296ec914b1857932ebe0b6bf08bda3e861ddba8"
+    0.016 D Work dir before adjustment :  "C:/Users/Admin/Desktop/MultiMC"
+    0.016 D Work dir after adjustment  :  "C:/Users/Admin/Desktop/MultiMC"
+    0.016 D Adjusted by                :  "Command line C:/Users/Admin/Desktop/MultiMC"
+    0.016 D Binary path                :  "C:/Users/Admin/Desktop/MultiMC"
+    0.016 D Application root path      :  "C:/Users/Admin/Desktop/MultiMC"
+    0.016 D Static data path           :  "C:/Users/Admin/Desktop/MultiMC"
+    0.058 D Detected default console font: "Courier" , substitutions: ""
+    0.058 D New FTB setup
+    0.058 D FTB Launcher paths: "C:/Users/Admin/AppData/Local/ftblauncher" and "C:/Users/Admin/AppData/Roaming/ftblauncher"
+    0.058 D Attempting to read "C:/Users/Admin/AppData/Roaming/ftblauncher/ftblaunch.cfg"
+    0.058 W Couldn't open "C:/Users/Admin/AppData/Roaming/ftblauncher/ftblaunch.cfg" : "Системе не удается найти указанный путь."
+    0.058 W This is perfectly normal if you don't have FTB installed
+    0.058 D Your language is "ru"
+    0.058 D Loading MMC Language File for ru ...
+    0.090 D Started watching  "C:/Users/Admin/Desktop/MultiMC/icons"
+    0.090 D Instance path              :  "instances"
+    0.090 D Loading Instances...
+    0.090 D Loading MultiMC instance from  "instances/Solyanka"
+    0.090 D Loaded instance  "Solyanka"  from  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka"
+    0.090 D Loading accounts...
+    0.090 C "Failed to read the account list file (accounts.json)."
+    0.090 D Detecting proxy settings...
+    0.090 D Using no proxy is an option!
+    0.090 D Downloading Translations Index...
+    0.090 D "Translations Index"  started.
+    0.121 D "Status JSON"  started.
+    0.136 D Loading builtin version list.
+    0.136 W Blacklisted legacy version ignored:  "rd-160052"
+    0.136 D Loading local version list.
+    0.136 D Loaded version "1.7.10" from local version list.
+    0.960 D Reloading news.
+    0.960 D "News RSS Feed"  started.
+    0.960 D Checking for updates.
+    0.960 D Channel list isn't loaded yet. Loading channel list and deferring update check.
+    0.960 D Loading the channel list.
+    0.960 D "Update System Channel List"  started.
+    0.960 D "Checking for notifications"  started.
+    1.054 D Downloading  "http://files.multimc.org/translations/index"
+    1.054 D Downloading  "http://status.mojang.com/check"
+    1.054 D Downloading  "http://multimc.org/rss.xml"
+    1.054 D Downloading  "http://files.multimc.org/update/win32/channels.json"
+    1.069 D Downloading  "http://files.multimc.org/notifications.json"
+    1.397 D "Translations Index" succeeded.
+    1.397 D Task succeeded
+    1.397 D Got translations index!
+    1.397 D "Translations"  started.
+    1.397 D Downloading  "http://files.multimc.org/translations/bg.qm"
+    1.397 D Downloading  "http://files.multimc.org/translations/cs.qm"
+    1.397 D Downloading  "http://files.multimc.org/translations/de.qm"
+    1.397 D Downloading  "http://files.multimc.org/translations/es.qm"
+    1.397 D Downloading  "http://files.multimc.org/translations/fi.qm"
+    1.397 D Downloading  "http://files.multimc.org/translations/fr.qm"
+    1.444 D "Update System Channel List" succeeded.
+    1.444 D Task succeeded
+    1.444 D Successfully loaded UpdateChecker channel list.
+    1.444 D Checking for updates.
+    1.444 D m_repoUrl =  "http://files.multimc.org/update/win32/develop/"
+    1.444 D "GoUpdate Repository Index"  started.
+    1.444 D "Status JSON" succeeded.
+    1.444 D Task succeeded
+    1.444 D Finished loading status JSON.
+    1.444 D Status loading succeeded.
+    1.460 D "Checking for notifications" succeeded.
+    1.460 D Task succeeded
+    1.460 D Downloading  "http://files.multimc.org/update/win32/develop/index.json"
+    1.460 D "News RSS Feed" succeeded.
+    1.460 D Task succeeded
+    1.460 D Finished loading RSS feed.
+    1.460 D Loaded news entry "Update to 0.4.6, Bug fixes and improvements!"
+    1.460 D Loaded news entry "Update to 0.4.5, Translations, Themes, and Technic"
+    1.460 D Loaded news entry "Version 0.4 out - Jar mods, UI changes, and more!"
+    1.460 D Loaded news entry "Introducing QuickMods - A better way to install mods"
+    1.460 D Loaded news entry "Support us on Patreon!"
+    1.460 D Loaded news entry "Heartbleed Vulnerability Update (fixed!)"
+    1.460 D Loaded news entry "Announcing MultiMC 6"
+    1.460 D Loaded news entry "MultiMC 5 - 0.3 update"
+    1.460 D Loaded news entry "First official MultiMC 5 release!"
+    1.460 D Loaded news entry "MultiMC Status Update"
+    1.460 D News loading succeeded.
+    1.522 D Downloading  "http://files.multimc.org/translations/it.qm"
+    1.522 D Downloading  "http://files.multimc.org/translations/ja.qm"
+    1.522 D Downloading  "http://files.multimc.org/translations/ko.qm"
+    1.585 D Downloading  "http://files.multimc.org/translations/nl.qm"
+    1.616 D Downloading  "http://files.multimc.org/translations/pl.qm"
+    1.616 D Downloading  "http://files.multimc.org/translations/pt_BR.qm"
+    1.632 D Downloading  "http://files.multimc.org/translations/pt_PT.qm"
+    1.632 D "GoUpdate Repository Index" succeeded.
+    1.632 D Task succeeded
+    1.647 D Finished downloading repo index. Checking for new versions.
+    1.647 D Processing repository version list.
+    1.647 D Downloading  "http://files.multimc.org/translations/ru.qm"
+    1.663 D Downloading  "http://files.multimc.org/translations/sv.qm"
+    1.679 D Downloading  "http://files.multimc.org/translations/zh.qm"
+    1.710 D Loading remote version list.
+    1.710 D Loaded version "1.8.4" from remote version list.
+    1.710 D Loaded version "1.8.3" from remote version list.
+    1.710 D Loaded version "1.8.2" from remote version list.
+    1.710 D Loaded version "1.8.2-pre7" from remote version list.
+    1.710 D Loaded version "1.8.1" from remote version list.
+    1.710 D Loaded version "1.8" from remote version list.
+    1.710 D Loaded version "14w34d" from remote version list.
+    1.710 D Loaded version "14w33c" from remote version list.
+    1.710 D Loaded version "14w32d" from remote version list.
+    1.710 D Loaded version "14w31a" from remote version list.
+    1.710 D Loaded version "14w30c" from remote version list.
+    1.710 D Loaded version "14w29b" from remote version list.
+    1.710 D Loaded version "14w28b" from remote version list.
+    1.710 D Loaded version "14w27b" from remote version list.
+    1.710 D Loaded version "14w26c" from remote version list.
+    1.710 D Loaded version "1.7.10" from remote version list.
+    1.710 D Loaded version "14w25b" from remote version list.
+    1.710 D Loaded version "1.7.10-pre4" from remote version list.
+    1.710 D Loaded version "1.7.10-pre3" from remote version list.
+    1.710 D Loaded version "1.7.10-pre2" from remote version list.
+    1.710 D Loaded version "1.7.10-pre1" from remote version list.
+    1.710 D Loaded version "14w21b" from remote version list.
+    1.710 D Loaded version "14w20b" from remote version list.
+    1.710 D Loaded version "14w19a" from remote version list.
+    1.710 D Loaded version "14w18b" from remote version list.
+    1.710 D Loaded version "14w17a" from remote version list.
+    1.710 D Loaded version "14w11b" from remote version list.
+    1.710 D Loaded version "1.7.9" from remote version list.
+    1.710 D Loaded version "14w10c" from remote version list.
+    1.710 D Loaded version "14w08a" from remote version list.
+    1.710 D Loaded version "1.7.5" from remote version list.
+    1.710 D Loaded version "14w07a" from remote version list.
+    1.710 D Loaded version "14w06b" from remote version list.
+    1.710 D Loaded version "14w05b" from remote version list.
+    1.710 D Loaded version "14w04b" from remote version list.
+    1.710 D Loaded version "14w03b" from remote version list.
+    1.710 D Loaded version "14w02c" from remote version list.
+    1.710 D Loaded version "1.7.4" from remote version list.
+    1.710 D Loaded version "1.7.3" from remote version list.
+    1.710 D Loaded version "1.7.2" from remote version list.
+    1.710 D Loaded version "1.7.1" from remote version list.
+    1.710 D Loaded version "1.7" from remote version list.
+    1.710 D Loaded version "1.6.4" from remote version list.
+    1.710 D Loaded version "1.6.2" from remote version list.
+    1.710 D Loaded version "1.6.1" from remote version list.
+    1.710 D Loaded version "1.6" from remote version list.
+    1.726 W Blacklisted legacy version ignored:  "rd-160052"
+    1.726 D Task succeeded
+    1.757 D "Translations" succeeded.
+    1.757 D Task succeeded
+    1.757 D Got translations!
+    2.022 D Discovered LWGL version "2.9.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip/download"
+    2.022 D Discovered LWGL version "2.9.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.2/lwjgl-2.9.2.zip/download"
+    2.022 D Discovered LWGL version "2.9.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip/download"
+    2.022 D Discovered LWGL version "2.9.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.0/lwjgl-2.9.0.zip/download"
+    2.022 D Discovered LWGL version "2.8.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.5/lwjgl-2.8.5.zip/download"
+    2.022 D Discovered LWGL version "2.8.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.4/lwjgl-2.8.4.zip/download"
+    2.022 D Discovered LWGL version "2.8.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.3/lwjgl-2.8.3.zip/download"
+    2.022 D Discovered LWGL version "2.8.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.2/lwjgl-2.8.2.zip/download"
+    2.022 D Discovered LWGL version "2.8.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.1/lwjgl-2.8.1.zip/download"
+    2.022 D Discovered LWGL version "2.8.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.0/lwjgl-2.8.0.zip/download"
+    2.022 D Discovered LWGL version "2.7.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7.1/lwjgl-2.7.1.zip/download"
+    2.022 D Discovered LWGL version "2.7" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7/lwjgl-2.7.zip/download"
+    2.038 D Discovered LWGL version "2.6" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.6/lwjgl-2.6.zip/download"
+    2.038 D Discovered LWGL version "2.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.5/lwjgl-2.5.zip/download"
+    2.038 D Discovered LWGL version "2.4.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.2/lwjgl-2.4.2.zip/download"
+    2.038 D Discovered LWGL version "2.4.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.1/lwjgl-2.4.1.zip/download"
+    2.038 D Discovered LWGL version "2.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4/lwjgl-2.4.zip/download"
+    2.038 D Discovered LWGL version "2.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.3/lwjgl-2.3.zip/download"
+    2.038 D Discovered LWGL version "2.2.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.2/lwjgl-2.2.2.zip/download"
+    2.038 D Discovered LWGL version "2.2.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.1/lwjgl-2.2.1.zip/download"
+    2.038 D Discovered LWGL version "2.2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.0/lwjgl-2.2.0.zip/download"
+    2.038 D Discovered LWGL version "2.1.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.1.0/lwjgl-2.1.0.zip/download"
+    2.038 D Discovered LWGL version "2.0.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0.1/lwjgl-2.0.1.zip/download"
+    2.038 D Discovered LWGL version "2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0/lwjgl-2.0.zip/download"
+    2.038 D Loaded LWJGL list.

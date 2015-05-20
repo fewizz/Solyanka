@@ -1,0 +1,10 @@
+{
+  "mods": {
+    "MultiMC5": {
+      "baubles-1.7.10-1.0.1.10.jar": true,
+      "eu.ha3.mc.matmos": true,
+      "newlaunch": true,
+      "voxelmap": true
+    }
+  }
+}

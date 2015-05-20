@@ -1,0 +1,764 @@
+    0.030 D MultiMC 5, (c) 2013-2015 MultiMC Contributors
+    0.030 D Version                    :  "0.4.6"
+    0.030 D Git commit                 :  "6ab6a450f6831c99ba507436ab15047cfa4d4528"
+    0.030 D Work dir before adjustment :  "C:/Users/Admin/Desktop/MultiMC"
+    0.030 D Work dir after adjustment  :  "C:/Users/Admin/Desktop/MultiMC"
+    0.030 D Adjusted by                :  "Command line C:/Users/Admin/Desktop/MultiMC"
+    0.030 D Binary path                :  "C:/Users/Admin/Desktop/MultiMC"
+    0.030 D Application root path      :  "C:/Users/Admin/Desktop/MultiMC"
+    0.030 D Static data path           :  "C:/Users/Admin/Desktop/MultiMC"
+    0.070 D Detected default console font: "Courier" , substitutions: ""
+    0.070 D New FTB setup
+    0.070 D FTB Launcher paths: "C:/Users/Admin/AppData/Local/ftblauncher" and "C:/Users/Admin/AppData/Roaming/ftblauncher"
+    0.070 D Attempting to read "C:/Users/Admin/AppData/Roaming/ftblauncher/ftblaunch.cfg"
+    0.070 W Couldn't open "C:/Users/Admin/AppData/Roaming/ftblauncher/ftblaunch.cfg" : "Системе не удается найти указанный путь."
+    0.070 W This is perfectly normal if you don't have FTB installed
+    0.070 D Your language is "ru"
+    0.080 D Loading MMC Language File for ru ...
+    0.200 D Started watching  "C:/Users/Admin/Desktop/MultiMC/icons"
+    0.200 D Instance path              :  "instances"
+    0.200 D Loading Instances...
+    0.200 D Loading MultiMC instance from  "instances/Solyanka"
+    0.200 D Loaded instance  "Solyanka"  from  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka"
+    0.200 D Loading accounts...
+    0.210 D Detecting proxy settings...
+    0.210 D Using no proxy is an option!
+    0.210 D Downloading Translations Index...
+    0.210 D "Translations Index"  started.
+    0.260 D "Status JSON"  started.
+    0.270 D "Startup player skins download"  started.
+    0.270 D Loading builtin version list.
+    0.270 W Blacklisted legacy version ignored:  "rd-160052"
+    0.270 D Loading local version list.
+    0.270 D Loaded version "1.7.10" from local version list.
+    1.110 D Reloading news.
+    1.110 D "News RSS Feed"  started.
+    1.110 D Checking for updates.
+    1.110 D Channel list isn't loaded yet. Loading channel list and deferring update check.
+    1.110 D Loading the channel list.
+    1.110 D "Update System Channel List"  started.
+    1.110 D "Checking for notifications"  started.
+    1.190 D Downloading  "http://files.multimc.org/translations/index"
+    1.200 D Downloading  "http://status.mojang.com/check"
+    1.200 D Downloading  "http://skins.minecraft.net/MinecraftSkins/bmoe15.png"
+    1.200 D Downloading  "http://multimc.org/rss.xml"
+    1.200 D Downloading  "http://files.multimc.org/update/win32/channels.json"
+    1.200 D Downloading  "http://files.multimc.org/notifications.json"
+    1.540 D "Checking for notifications" succeeded.
+    1.540 D Task succeeded
+    1.540 D "Translations Index" succeeded.
+    1.540 D Task succeeded
+    1.540 D Got translations index!
+    1.550 D "Translations"  started.
+    1.570 D Downloading  "http://files.multimc.org/translations/bg.qm"
+    1.570 D Downloading  "http://files.multimc.org/translations/cs.qm"
+    1.580 D Downloading  "http://files.multimc.org/translations/de.qm"
+    1.580 D Downloading  "http://files.multimc.org/translations/es.qm"
+    1.580 D Downloading  "http://files.multimc.org/translations/fi.qm"
+    1.590 D Downloading  "http://files.multimc.org/translations/fr.qm"
+    1.590 D "Update System Channel List" succeeded.
+    1.590 D Task succeeded
+    1.590 D Successfully loaded UpdateChecker channel list.
+    1.590 D Checking for updates.
+    1.590 D m_repoUrl =  "http://files.multimc.org/update/win32/develop/"
+    1.590 D "GoUpdate Repository Index"  started.
+    1.590 D "News RSS Feed" succeeded.
+    1.590 D Task succeeded
+    1.590 D Finished loading RSS feed.
+    1.590 D Loaded news entry "Update to 0.4.5, Translations, Themes, and Technic"
+    1.590 D Loaded news entry "Version 0.4 out - Jar mods, UI changes, and more!"
+    1.590 D Loaded news entry "Introducing QuickMods - A better way to install mods"
+    1.590 D Loaded news entry "Support us on Patreon!"
+    1.590 D Loaded news entry "Heartbleed Vulnerability Update (fixed!)"
+    1.590 D Loaded news entry "Announcing MultiMC 6"
+    1.590 D Loaded news entry "MultiMC 5 - 0.3 update"
+    1.590 D Loaded news entry "First official MultiMC 5 release!"
+    1.590 D Loaded news entry "MultiMC Status Update"
+    1.590 D News loading succeeded.
+    1.590 D Following redirect to  "http://textures.minecraft.net/texture/3793e4ffb88d9e679140bcd7f5e547df5153c80b4597a8d5ac77796cae840"
+    1.590 D Downloading  "http://textures.minecraft.net/texture/3793e4ffb88d9e679140bcd7f5e547df5153c80b4597a8d5ac77796cae840"
+    1.590 D Downloading  "http://files.multimc.org/update/win32/develop/index.json"
+    1.650 D Downloading  "http://files.multimc.org/translations/it.qm"
+    1.650 D Downloading  "http://files.multimc.org/translations/ja.qm"
+    1.650 D Downloading  "http://files.multimc.org/translations/ko.qm"
+    1.670 D Loading remote version list.
+    1.670 D Loaded version "1.8.4" from remote version list.
+    1.670 D Loaded version "1.8.3" from remote version list.
+    1.670 D Loaded version "1.8.2" from remote version list.
+    1.670 D Loaded version "1.8.2-pre7" from remote version list.
+    1.670 D Loaded version "1.8.1" from remote version list.
+    1.670 D Loaded version "1.8" from remote version list.
+    1.670 D Loaded version "14w34d" from remote version list.
+    1.670 D Loaded version "14w33c" from remote version list.
+    1.670 D Loaded version "14w32d" from remote version list.
+    1.670 D Loaded version "14w31a" from remote version list.
+    1.670 D Loaded version "14w30c" from remote version list.
+    1.670 D Loaded version "14w29b" from remote version list.
+    1.670 D Loaded version "14w28b" from remote version list.
+    1.670 D Loaded version "14w27b" from remote version list.
+    1.670 D Loaded version "14w26c" from remote version list.
+    1.670 D Loaded version "1.7.10" from remote version list.
+    1.670 D Loaded version "14w25b" from remote version list.
+    1.670 D Loaded version "1.7.10-pre4" from remote version list.
+    1.670 D Loaded version "1.7.10-pre3" from remote version list.
+    1.670 D Loaded version "1.7.10-pre2" from remote version list.
+    1.670 D Loaded version "1.7.10-pre1" from remote version list.
+    1.670 D Loaded version "14w21b" from remote version list.
+    1.670 D Loaded version "14w20b" from remote version list.
+    1.670 D Loaded version "14w19a" from remote version list.
+    1.670 D Loaded version "14w18b" from remote version list.
+    1.670 D Loaded version "14w17a" from remote version list.
+    1.670 D Loaded version "14w11b" from remote version list.
+    1.670 D Loaded version "1.7.9" from remote version list.
+    1.670 D Loaded version "14w10c" from remote version list.
+    1.670 D Loaded version "14w08a" from remote version list.
+    1.670 D Loaded version "1.7.5" from remote version list.
+    1.670 D Loaded version "14w07a" from remote version list.
+    1.670 D Loaded version "14w06b" from remote version list.
+    1.670 D Loaded version "14w05b" from remote version list.
+    1.670 D Loaded version "14w04b" from remote version list.
+    1.670 D Loaded version "14w03b" from remote version list.
+    1.670 D Loaded version "14w02c" from remote version list.
+    1.670 D Loaded version "1.7.4" from remote version list.
+    1.670 D Loaded version "1.7.3" from remote version list.
+    1.670 D Loaded version "1.7.2" from remote version list.
+    1.670 D Loaded version "1.7.1" from remote version list.
+    1.670 D Loaded version "1.7" from remote version list.
+    1.670 D Loaded version "1.6.4" from remote version list.
+    1.670 D Loaded version "1.6.2" from remote version list.
+    1.670 D Loaded version "1.6.1" from remote version list.
+    1.670 D Loaded version "1.6" from remote version list.
+    1.670 W Blacklisted legacy version ignored:  "rd-160052"
+    1.670 D Task succeeded
+    1.670 D "Status JSON" succeeded.
+    1.670 D Task succeeded
+    1.670 D Finished loading status JSON.
+    1.670 D Status loading succeeded.
+    1.730 D Downloading  "http://files.multimc.org/translations/nl.qm"
+    1.730 D Downloading  "http://files.multimc.org/translations/pl.qm"
+    1.730 D Downloading  "http://files.multimc.org/translations/pt_BR.qm"
+    1.770 D Downloading  "http://files.multimc.org/translations/pt_PT.qm"
+    1.770 D Downloading  "http://files.multimc.org/translations/ru.qm"
+    1.800 D Downloading  "http://files.multimc.org/translations/sv.qm"
+    1.860 D Downloading  "http://files.multimc.org/translations/zh.qm"
+    1.910 D "GoUpdate Repository Index" succeeded.
+    1.910 D Task succeeded
+    1.910 D Finished downloading repo index. Checking for new versions.
+    1.910 D Processing repository version list.
+    1.990 D "Startup player skins download" succeeded.
+    1.990 D Task succeeded
+    1.990 D "Translations" succeeded.
+    1.990 D Task succeeded
+    1.990 D Got translations!
+    2.150 D Discovered LWGL version "2.9.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.3/lwjgl-2.9.3.zip/download"
+    2.150 D Discovered LWGL version "2.9.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.2/lwjgl-2.9.2.zip/download"
+    2.150 D Discovered LWGL version "2.9.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip/download"
+    2.150 D Discovered LWGL version "2.9.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.0/lwjgl-2.9.0.zip/download"
+    2.150 D Discovered LWGL version "2.8.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.5/lwjgl-2.8.5.zip/download"
+    2.150 D Discovered LWGL version "2.8.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.4/lwjgl-2.8.4.zip/download"
+    2.150 D Discovered LWGL version "2.8.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.3/lwjgl-2.8.3.zip/download"
+    2.150 D Discovered LWGL version "2.8.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.2/lwjgl-2.8.2.zip/download"
+    2.150 D Discovered LWGL version "2.8.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.1/lwjgl-2.8.1.zip/download"
+    2.150 D Discovered LWGL version "2.8.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.0/lwjgl-2.8.0.zip/download"
+    2.150 D Discovered LWGL version "2.7.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7.1/lwjgl-2.7.1.zip/download"
+    2.150 D Discovered LWGL version "2.7" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7/lwjgl-2.7.zip/download"
+    2.150 D Discovered LWGL version "2.6" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.6/lwjgl-2.6.zip/download"
+    2.150 D Discovered LWGL version "2.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.5/lwjgl-2.5.zip/download"
+    2.150 D Discovered LWGL version "2.4.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.2/lwjgl-2.4.2.zip/download"
+    2.150 D Discovered LWGL version "2.4.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.1/lwjgl-2.4.1.zip/download"
+    2.150 D Discovered LWGL version "2.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4/lwjgl-2.4.zip/download"
+    2.150 D Discovered LWGL version "2.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.3/lwjgl-2.3.zip/download"
+    2.150 D Discovered LWGL version "2.2.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.2/lwjgl-2.2.2.zip/download"
+    2.150 D Discovered LWGL version "2.2.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.1/lwjgl-2.2.1.zip/download"
+    2.150 D Discovered LWGL version "2.2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.0/lwjgl-2.2.0.zip/download"
+    2.150 D Discovered LWGL version "2.1.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.1.0/lwjgl-2.1.0.zip/download"
+    2.150 D Discovered LWGL version "2.0.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0.1/lwjgl-2.0.1.zip/download"
+    2.150 D Discovered LWGL version "2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0/lwjgl-2.0.zip/download"
+    2.150 D Loaded LWJGL list.
+   12.652 D Processing authentication response.
+   12.652 D Getting new access token.
+   12.652 D Finished reading refresh response.
+   12.652 D Task succeeded
+   12.653 D Writing account list to "accounts.json"
+   12.653 D Building JSON data structure.
+   12.653 D Building account array.
+   12.653 D Writing account list to file.
+   12.654 D Saved account list to "accounts.json"
+   12.658 D "Version index"  started.
+   12.663 D Downloading  "http://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/1.7.10.json"
+   12.861 D "Version index" succeeded.
+   12.861 D Task succeeded
+   12.911 D Task succeeded
+   12.911 D "Solyanka" : downloading libraries
+   12.911 W Order file doesn't exist. Ignoring.
+   12.911 D Reading "net.minecraftforge.json"
+   12.921 D "���������� ��� ������ Solyanka"  started.
+   12.921 D "Библиотеки для сборки Solyanka" succeeded.
+   12.921 D Task succeeded
+   12.921 D "Solyanka" : Starting asset index download
+   12.921 D "������ ������ Solyanka"  started.
+   12.921 D "Важный ресурс Solyanka" succeeded.
+   12.921 D Task succeeded
+   12.921 D "Solyanka" : Finished asset index download
+   12.961 D Task succeeded
+   13.731 W Order file doesn't exist. Ignoring.
+   13.731 D Reading "net.minecraftforge.json"
+   13.741 D reconstructAssets "assets" "assets/indexes" "assets/objects" "assets/virtual" "assets/virtual/1.7.10"
+   13.751 D Env:  "ProgramData" "C:\ProgramData"
+   13.751 D Env:  "USERNAME" "Admin"
+   13.751 D Env:  "PROCESSOR_REVISION" "6b02"
+   13.751 D Env:  "PROCESSOR_ARCHITECTURE" "x86"
+   13.751 D Env:  "NUMBER_OF_PROCESSORS" "2"
+   13.751 D Env:  "USERPROFILE" "C:\Users\Admin"
+   13.751 D Env:  "windir" "C:\Windows"
+   13.751 D Env:  "PATHEXT" ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
+   13.751 D Env:  "LOGONSERVER" "\\ADMINCOMP"
+   13.751 D Env:  "CommonProgramFiles" "C:\Program Files (x86)\Common Files"
+   13.751 D Env:  "LOCALAPPDATA" "C:\Users\Admin\AppData\Local"
+   13.751 D Env:  "CommonProgramW6432" "C:\Program Files\Common Files"
+   13.751 D Env:  "PROCESSOR_LEVEL" "15"
+   13.751 D Env:  "Path" "C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_75\bin\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common"
+   13.751 D Env:  "FP_NO_HOST_CHECK" "NO"
+   13.751 D Env:  "SystemRoot" "C:\Windows"
+   13.751 D Env:  "SESSIONNAME" "Console"
+   13.751 D Env:  "ALLUSERSPROFILE" "C:\ProgramData"
+   13.751 D Env:  "PSModulePath" "C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"
+   13.751 D Env:  "PROCESSOR_ARCHITEW6432" "AMD64"
+   13.751 D Env:  "COMPUTERNAME" "ADMINCOMP"
+   13.751 D Env:  "USERDOMAIN" "admincomp"
+   13.751 D Env:  "TEMP" "C:\Users\Admin\AppData\Local\Temp"
+   13.751 D Env:  "PUBLIC" "C:\Users\Public"
+   13.751 D Env:  "CommonProgramFiles(x86)" "C:\Program Files (x86)\Common Files"
+   13.751 D Env:  "PROCESSOR_IDENTIFIER" "AMD64 Family 15 Model 107 Stepping 2, AuthenticAMD"
+   13.751 D Env:  "TMP" "C:\Users\Admin\AppData\Local\Temp"
+   13.751 D Env:  "USERDOMAIN_ROAMINGPROFILE" "admincomp"
+   13.751 D Env:  "OS" "Windows_NT"
+   13.751 D Env:  "ProgramFiles" "C:\Program Files (x86)"
+   13.751 D Env: ignoring "JAVA_HOME" "C:\Program Files\Java\jdk1.7.0_75"
+   13.751 D Env:  "HOMEPATH" "\Users\Admin"
+   13.751 D Env:  "ComSpec" "C:\Windows\system32\cmd.exe"
+   13.751 D Env:  "VS120COMNTOOLS" "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\"
+   13.751 D Env:  "APPDATA" "C:\Users\Admin\AppData\Roaming"
+   13.751 D Env:  "HOMEDRIVE" "C:"
+   13.751 D Env:  "ProgramW6432" "C:\Program Files"
+   13.751 D Env:  "ProgramFiles(x86)" "C:\Program Files (x86)"
+   13.751 D Env:  "SystemDrive" "C:"
+   13.751 W Order file doesn't exist. Ignoring.
+   13.751 D Reading "net.minecraftforge.json"
+   13.891 W QWidget::setLayout: Attempting to set QLayout "" on ConsoleWindow "", which already has a layout
+   60.258 D "Status JSON"  started.
+   60.258 D Downloading  "http://status.mojang.com/check"
+   60.434 D "Status JSON" succeeded.
+   60.434 D Task succeeded
+   60.434 D Finished loading status JSON.
+   60.434 D Status loading succeeded.
+  120.271 D "Status JSON"  started.
+  120.271 D Downloading  "http://status.mojang.com/check"
+  120.514 D "Status JSON" succeeded.
+  120.514 D Task succeeded
+  120.514 D Finished loading status JSON.
+  120.514 D Status loading succeeded.
+  180.274 D "Status JSON"  started.
+  180.274 D Downloading  "http://status.mojang.com/check"
+  180.471 D "Status JSON" succeeded.
+  180.471 D Task succeeded
+  180.471 D Finished loading status JSON.
+  180.471 D Status loading succeeded.
+  240.271 D "Status JSON"  started.
+  240.271 D Downloading  "http://status.mojang.com/check"
+  240.478 D "Status JSON" succeeded.
+  240.478 D Task succeeded
+  240.478 D Finished loading status JSON.
+  240.479 D Status loading succeeded.
+  300.271 D "Status JSON"  started.
+  300.271 D Downloading  "http://status.mojang.com/check"
+  300.458 D "Status JSON" succeeded.
+  300.459 D Task succeeded
+  300.459 D Finished loading status JSON.
+  300.459 D Status loading succeeded.
+  360.295 D "Status JSON"  started.
+  360.295 D Downloading  "http://status.mojang.com/check"
+  361.159 D "Status JSON" succeeded.
+  361.160 D Task succeeded
+  361.160 D Finished loading status JSON.
+  361.160 D Status loading succeeded.
+  420.272 D "Status JSON"  started.
+  420.272 D Downloading  "http://status.mojang.com/check"
+  420.459 D "Status JSON" succeeded.
+  420.459 D Task succeeded
+  420.459 D Finished loading status JSON.
+  420.459 D Status loading succeeded.
+  480.285 D "Status JSON"  started.
+  480.285 D Downloading  "http://status.mojang.com/check"
+  480.458 D "Status JSON" succeeded.
+  480.459 D Task succeeded
+  480.459 D Finished loading status JSON.
+  480.459 D Status loading succeeded.
+  540.274 D "Status JSON"  started.
+  540.274 D Downloading  "http://status.mojang.com/check"
+  540.465 D "Status JSON" succeeded.
+  540.465 D Task succeeded
+  540.465 D Finished loading status JSON.
+  540.465 D Status loading succeeded.
+  600.275 D "Status JSON"  started.
+  600.275 D Downloading  "http://status.mojang.com/check"
+  600.695 D "Status JSON" succeeded.
+  600.695 D Task succeeded
+  600.695 D Finished loading status JSON.
+  600.695 D Status loading succeeded.
+  660.275 D "Status JSON"  started.
+  660.275 D Downloading  "http://status.mojang.com/check"
+  660.462 D "Status JSON" succeeded.
+  660.462 D Task succeeded
+  660.462 D Finished loading status JSON.
+  660.462 D Status loading succeeded.
+  720.286 D "Status JSON"  started.
+  720.286 D Downloading  "http://status.mojang.com/check"
+  720.499 D "Status JSON" succeeded.
+  720.499 D Task succeeded
+  720.499 D Finished loading status JSON.
+  720.499 D Status loading succeeded.
+  737.839 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/texturepacks"
+  737.839 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+  737.839 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/coremods"
+  737.839 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+  780.278 D "Status JSON"  started.
+  780.278 D Downloading  "http://status.mojang.com/check"
+  780.466 D "Status JSON" succeeded.
+  780.466 D Task succeeded
+  780.466 D Finished loading status JSON.
+  780.467 D Status loading succeeded.
+  812.858 D Processing authentication response.
+  812.858 D Getting new access token.
+  812.858 D Finished reading refresh response.
+  812.858 D Task succeeded
+  812.858 D Writing account list to "accounts.json"
+  812.858 D Building JSON data structure.
+  812.859 D Building account array.
+  812.859 D Writing account list to file.
+  812.859 D Saved account list to "accounts.json"
+  812.864 D Instance either provides a version file or doesn't need an update.
+  812.864 D "Solyanka" : downloading libraries
+  812.865 W Order file doesn't exist. Ignoring.
+  812.865 D Reading "net.minecraftforge.json"
+  812.870 D "���������� ��� ������ Solyanka"  started.
+  812.876 D "Библиотеки для сборки Solyanka" succeeded.
+  812.877 D Task succeeded
+  812.878 D "Solyanka" : Starting asset index download
+  812.878 D "������ ������ Solyanka"  started.
+  812.892 D "Важный ресурс Solyanka" succeeded.
+  812.892 D Task succeeded
+  812.892 D "Solyanka" : Finished asset index download
+  812.922 D Task succeeded
+  813.702 W Order file doesn't exist. Ignoring.
+  813.702 D Reading "net.minecraftforge.json"
+  813.712 D reconstructAssets "assets" "assets/indexes" "assets/objects" "assets/virtual" "assets/virtual/1.7.10"
+  813.722 D Env:  "ProgramData" "C:\ProgramData"
+  813.722 D Env:  "USERNAME" "Admin"
+  813.722 D Env:  "PROCESSOR_REVISION" "6b02"
+  813.722 D Env:  "PROCESSOR_ARCHITECTURE" "x86"
+  813.722 D Env:  "NUMBER_OF_PROCESSORS" "2"
+  813.722 D Env:  "USERPROFILE" "C:\Users\Admin"
+  813.722 D Env:  "windir" "C:\Windows"
+  813.722 D Env:  "PATHEXT" ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
+  813.722 D Env:  "LOGONSERVER" "\\ADMINCOMP"
+  813.722 D Env:  "CommonProgramFiles" "C:\Program Files (x86)\Common Files"
+  813.722 D Env:  "LOCALAPPDATA" "C:\Users\Admin\AppData\Local"
+  813.722 D Env:  "CommonProgramW6432" "C:\Program Files\Common Files"
+  813.722 D Env:  "PROCESSOR_LEVEL" "15"
+  813.722 D Env:  "Path" "C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_75\bin\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common"
+  813.722 D Env:  "FP_NO_HOST_CHECK" "NO"
+  813.722 D Env:  "SystemRoot" "C:\Windows"
+  813.722 D Env:  "SESSIONNAME" "Console"
+  813.722 D Env:  "ALLUSERSPROFILE" "C:\ProgramData"
+  813.722 D Env:  "PSModulePath" "C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"
+  813.722 D Env:  "PROCESSOR_ARCHITEW6432" "AMD64"
+  813.722 D Env:  "COMPUTERNAME" "ADMINCOMP"
+  813.722 D Env:  "USERDOMAIN" "admincomp"
+  813.722 D Env:  "TEMP" "C:\Users\Admin\AppData\Local\Temp"
+  813.722 D Env:  "PUBLIC" "C:\Users\Public"
+  813.722 D Env:  "CommonProgramFiles(x86)" "C:\Program Files (x86)\Common Files"
+  813.722 D Env:  "PROCESSOR_IDENTIFIER" "AMD64 Family 15 Model 107 Stepping 2, AuthenticAMD"
+  813.722 D Env:  "TMP" "C:\Users\Admin\AppData\Local\Temp"
+  813.722 D Env:  "USERDOMAIN_ROAMINGPROFILE" "admincomp"
+  813.722 D Env:  "OS" "Windows_NT"
+  813.722 D Env:  "ProgramFiles" "C:\Program Files (x86)"
+  813.722 D Env: ignoring "JAVA_HOME" "C:\Program Files\Java\jdk1.7.0_75"
+  813.722 D Env:  "HOMEPATH" "\Users\Admin"
+  813.722 D Env:  "ComSpec" "C:\Windows\system32\cmd.exe"
+  813.722 D Env:  "VS120COMNTOOLS" "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\"
+  813.722 D Env:  "APPDATA" "C:\Users\Admin\AppData\Roaming"
+  813.722 D Env:  "HOMEDRIVE" "C:"
+  813.722 D Env:  "ProgramW6432" "C:\Program Files"
+  813.722 D Env:  "ProgramFiles(x86)" "C:\Program Files (x86)"
+  813.722 D Env:  "SystemDrive" "C:"
+  813.722 W Order file doesn't exist. Ignoring.
+  813.722 D Reading "net.minecraftforge.json"
+  813.842 W QWidget::setLayout: Attempting to set QLayout "" on ConsoleWindow "", which already has a layout
+  840.290 D "Status JSON"  started.
+  840.290 D Downloading  "http://status.mojang.com/check"
+  840.529 D "Status JSON" succeeded.
+  840.529 D Task succeeded
+  840.529 D Finished loading status JSON.
+  840.529 D Status loading succeeded.
+  900.275 D "Status JSON"  started.
+  900.275 D Downloading  "http://status.mojang.com/check"
+  900.458 D "Status JSON" succeeded.
+  900.458 D Task succeeded
+  900.458 D Finished loading status JSON.
+  900.458 D Status loading succeeded.
+  960.285 D "Status JSON"  started.
+  960.285 D Downloading  "http://status.mojang.com/check"
+  960.452 D "Status JSON" succeeded.
+  960.452 D Task succeeded
+  960.452 D Finished loading status JSON.
+  960.452 D Status loading succeeded.
+ 1020.273 D "Status JSON"  started.
+ 1020.273 D Downloading  "http://status.mojang.com/check"
+ 1020.453 D "Status JSON" succeeded.
+ 1020.454 D Task succeeded
+ 1020.454 D Finished loading status JSON.
+ 1020.454 D Status loading succeeded.
+ 1080.274 D "Status JSON"  started.
+ 1080.274 D Downloading  "http://status.mojang.com/check"
+ 1080.446 D "Status JSON" succeeded.
+ 1080.447 D Task succeeded
+ 1080.447 D Finished loading status JSON.
+ 1080.447 D Status loading succeeded.
+ 1140.271 D "Status JSON"  started.
+ 1140.271 D Downloading  "http://status.mojang.com/check"
+ 1140.452 D "Status JSON" succeeded.
+ 1140.453 D Task succeeded
+ 1140.453 D Finished loading status JSON.
+ 1140.453 D Status loading succeeded.
+ 1200.274 D "Status JSON"  started.
+ 1200.274 D Downloading  "http://status.mojang.com/check"
+ 1200.711 D "Status JSON" succeeded.
+ 1200.711 D Task succeeded
+ 1200.711 D Finished loading status JSON.
+ 1200.712 D Status loading succeeded.
+ 1260.283 D "Status JSON"  started.
+ 1260.283 D Downloading  "http://status.mojang.com/check"
+ 1260.705 D "Status JSON" succeeded.
+ 1260.705 D Task succeeded
+ 1260.705 D Finished loading status JSON.
+ 1260.705 D Status loading succeeded.
+ 1320.285 D "Status JSON"  started.
+ 1320.285 D Downloading  "http://status.mojang.com/check"
+ 1320.474 D "Status JSON" succeeded.
+ 1320.474 D Task succeeded
+ 1320.474 D Finished loading status JSON.
+ 1320.474 D Status loading succeeded.
+ 1380.276 D "Status JSON"  started.
+ 1380.276 D Downloading  "http://status.mojang.com/check"
+ 1380.464 D "Status JSON" succeeded.
+ 1380.464 D Task succeeded
+ 1380.464 D Finished loading status JSON.
+ 1380.464 D Status loading succeeded.
+ 1440.271 D "Status JSON"  started.
+ 1440.271 D Downloading  "http://status.mojang.com/check"
+ 1440.778 D "Status JSON" succeeded.
+ 1440.778 D Task succeeded
+ 1440.778 D Finished loading status JSON.
+ 1440.778 D Status loading succeeded.
+ 1443.090 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/texturepacks"
+ 1443.090 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 1443.090 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/coremods"
+ 1443.090 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 1500.274 D "Status JSON"  started.
+ 1500.274 D Downloading  "http://status.mojang.com/check"
+ 1500.453 D "Status JSON" succeeded.
+ 1500.453 D Task succeeded
+ 1500.453 D Finished loading status JSON.
+ 1500.453 D Status loading succeeded.
+ 1560.272 D "Status JSON"  started.
+ 1560.272 D Downloading  "http://status.mojang.com/check"
+ 1560.458 D "Status JSON" succeeded.
+ 1560.458 D Task succeeded
+ 1560.458 D Finished loading status JSON.
+ 1560.458 D Status loading succeeded.
+ 1620.271 D "Status JSON"  started.
+ 1620.271 D Downloading  "http://status.mojang.com/check"
+ 1620.443 D "Status JSON" succeeded.
+ 1620.443 D Task succeeded
+ 1620.443 D Finished loading status JSON.
+ 1620.443 D Status loading succeeded.
+ 1680.272 D "Status JSON"  started.
+ 1680.272 D Downloading  "http://status.mojang.com/check"
+ 1680.443 D "Status JSON" succeeded.
+ 1680.443 D Task succeeded
+ 1680.443 D Finished loading status JSON.
+ 1680.443 D Status loading succeeded.
+ 1680.777 D Processing authentication response.
+ 1680.777 D Getting new access token.
+ 1680.777 D Finished reading refresh response.
+ 1680.777 D Task succeeded
+ 1680.777 D Writing account list to "accounts.json"
+ 1680.777 D Building JSON data structure.
+ 1680.777 D Building account array.
+ 1680.777 D Writing account list to file.
+ 1680.778 D Saved account list to "accounts.json"
+ 1680.782 D Instance either provides a version file or doesn't need an update.
+ 1680.783 D "Solyanka" : downloading libraries
+ 1680.783 W Order file doesn't exist. Ignoring.
+ 1680.783 D Reading "net.minecraftforge.json"
+ 1680.789 D "���������� ��� ������ Solyanka"  started.
+ 1680.794 D "Библиотеки для сборки Solyanka" succeeded.
+ 1680.794 D Task succeeded
+ 1680.795 D "Solyanka" : Starting asset index download
+ 1680.795 D "������ ������ Solyanka"  started.
+ 1680.811 D "Важный ресурс Solyanka" succeeded.
+ 1680.811 D Task succeeded
+ 1680.811 D "Solyanka" : Finished asset index download
+ 1680.841 D Task succeeded
+ 1681.711 W Order file doesn't exist. Ignoring.
+ 1681.711 D Reading "net.minecraftforge.json"
+ 1681.721 D reconstructAssets "assets" "assets/indexes" "assets/objects" "assets/virtual" "assets/virtual/1.7.10"
+ 1681.731 D Env:  "ProgramData" "C:\ProgramData"
+ 1681.731 D Env:  "USERNAME" "Admin"
+ 1681.731 D Env:  "PROCESSOR_REVISION" "6b02"
+ 1681.731 D Env:  "PROCESSOR_ARCHITECTURE" "x86"
+ 1681.731 D Env:  "NUMBER_OF_PROCESSORS" "2"
+ 1681.731 D Env:  "USERPROFILE" "C:\Users\Admin"
+ 1681.731 D Env:  "windir" "C:\Windows"
+ 1681.731 D Env:  "PATHEXT" ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
+ 1681.731 D Env:  "LOGONSERVER" "\\ADMINCOMP"
+ 1681.731 D Env:  "CommonProgramFiles" "C:\Program Files (x86)\Common Files"
+ 1681.731 D Env:  "LOCALAPPDATA" "C:\Users\Admin\AppData\Local"
+ 1681.731 D Env:  "CommonProgramW6432" "C:\Program Files\Common Files"
+ 1681.731 D Env:  "PROCESSOR_LEVEL" "15"
+ 1681.731 D Env:  "Path" "C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.7.0_75\bin\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common"
+ 1681.731 D Env:  "FP_NO_HOST_CHECK" "NO"
+ 1681.731 D Env:  "SystemRoot" "C:\Windows"
+ 1681.731 D Env:  "SESSIONNAME" "Console"
+ 1681.731 D Env:  "ALLUSERSPROFILE" "C:\ProgramData"
+ 1681.731 D Env:  "PSModulePath" "C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"
+ 1681.731 D Env:  "PROCESSOR_ARCHITEW6432" "AMD64"
+ 1681.731 D Env:  "COMPUTERNAME" "ADMINCOMP"
+ 1681.731 D Env:  "USERDOMAIN" "admincomp"
+ 1681.731 D Env:  "TEMP" "C:\Users\Admin\AppData\Local\Temp"
+ 1681.731 D Env:  "PUBLIC" "C:\Users\Public"
+ 1681.731 D Env:  "CommonProgramFiles(x86)" "C:\Program Files (x86)\Common Files"
+ 1681.731 D Env:  "PROCESSOR_IDENTIFIER" "AMD64 Family 15 Model 107 Stepping 2, AuthenticAMD"
+ 1681.731 D Env:  "TMP" "C:\Users\Admin\AppData\Local\Temp"
+ 1681.731 D Env:  "USERDOMAIN_ROAMINGPROFILE" "admincomp"
+ 1681.731 D Env:  "OS" "Windows_NT"
+ 1681.731 D Env:  "ProgramFiles" "C:\Program Files (x86)"
+ 1681.731 D Env: ignoring "JAVA_HOME" "C:\Program Files\Java\jdk1.7.0_75"
+ 1681.731 D Env:  "HOMEPATH" "\Users\Admin"
+ 1681.731 D Env:  "ComSpec" "C:\Windows\system32\cmd.exe"
+ 1681.731 D Env:  "VS120COMNTOOLS" "C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\"
+ 1681.731 D Env:  "APPDATA" "C:\Users\Admin\AppData\Roaming"
+ 1681.731 D Env:  "HOMEDRIVE" "C:"
+ 1681.731 D Env:  "ProgramW6432" "C:\Program Files"
+ 1681.731 D Env:  "ProgramFiles(x86)" "C:\Program Files (x86)"
+ 1681.731 D Env:  "SystemDrive" "C:"
+ 1681.731 W Order file doesn't exist. Ignoring.
+ 1681.731 D Reading "net.minecraftforge.json"
+ 1681.881 W QWidget::setLayout: Attempting to set QLayout "" on ConsoleWindow "", which already has a layout
+ 1740.274 D "Status JSON"  started.
+ 1740.274 D Downloading  "http://status.mojang.com/check"
+ 1740.457 D "Status JSON" succeeded.
+ 1740.457 D Task succeeded
+ 1740.457 D Finished loading status JSON.
+ 1740.457 D Status loading succeeded.
+ 1800.274 D "Status JSON"  started.
+ 1800.274 D Downloading  "http://status.mojang.com/check"
+ 1800.464 D "Status JSON" succeeded.
+ 1800.464 D Task succeeded
+ 1800.464 D Finished loading status JSON.
+ 1800.465 D Status loading succeeded.
+ 1860.275 D "Status JSON"  started.
+ 1860.275 D Downloading  "http://status.mojang.com/check"
+ 1860.717 D "Status JSON" succeeded.
+ 1860.718 D Task succeeded
+ 1860.718 D Finished loading status JSON.
+ 1860.718 D Status loading succeeded.
+ 1920.274 D "Status JSON"  started.
+ 1920.274 D Downloading  "http://status.mojang.com/check"
+ 1920.729 D "Status JSON" succeeded.
+ 1920.729 D Task succeeded
+ 1920.729 D Finished loading status JSON.
+ 1920.729 D Status loading succeeded.
+ 1980.277 D "Status JSON"  started.
+ 1980.277 D Downloading  "http://status.mojang.com/check"
+ 1980.715 D "Status JSON" succeeded.
+ 1980.715 D Task succeeded
+ 1980.716 D Finished loading status JSON.
+ 1980.716 D Status loading succeeded.
+ 2040.273 D "Status JSON"  started.
+ 2040.273 D Downloading  "http://status.mojang.com/check"
+ 2040.457 D "Status JSON" succeeded.
+ 2040.457 D Task succeeded
+ 2040.457 D Finished loading status JSON.
+ 2040.457 D Status loading succeeded.
+ 2100.277 D "Status JSON"  started.
+ 2100.277 D Downloading  "http://status.mojang.com/check"
+ 2100.466 D "Status JSON" succeeded.
+ 2100.466 D Task succeeded
+ 2100.466 D Finished loading status JSON.
+ 2100.466 D Status loading succeeded.
+ 2160.274 D "Status JSON"  started.
+ 2160.274 D Downloading  "http://status.mojang.com/check"
+ 2160.469 D "Status JSON" succeeded.
+ 2160.470 D Task succeeded
+ 2160.470 D Finished loading status JSON.
+ 2160.470 D Status loading succeeded.
+ 2220.275 D "Status JSON"  started.
+ 2220.275 D Downloading  "http://status.mojang.com/check"
+ 2220.447 D "Status JSON" succeeded.
+ 2220.447 D Task succeeded
+ 2220.447 D Finished loading status JSON.
+ 2220.447 D Status loading succeeded.
+ 2227.523 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/texturepacks"
+ 2227.523 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 2227.523 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/coremods"
+ 2227.523 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 2280.287 D "Status JSON"  started.
+ 2280.287 D Downloading  "http://status.mojang.com/check"
+ 2280.737 D "Status JSON" succeeded.
+ 2280.737 D Task succeeded
+ 2280.737 D Finished loading status JSON.
+ 2280.737 D Status loading succeeded.
+ 2302.107 W Order file doesn't exist. Ignoring.
+ 2302.107 D Reading "net.minecraftforge.json"
+ 2332.822 D Started watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 2334.732 D Stopped watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 2334.752 D Started watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 2335.312 D Stopped watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 2340.298 D "Status JSON"  started.
+ 2340.298 D Downloading  "http://status.mojang.com/check"
+ 2340.728 D "Status JSON" succeeded.
+ 2340.728 D Task succeeded
+ 2340.728 D Finished loading status JSON.
+ 2340.728 D Status loading succeeded.
+ 2400.291 D "Status JSON"  started.
+ 2400.291 D Downloading  "http://status.mojang.com/check"
+ 2400.451 D "Status JSON" succeeded.
+ 2400.451 D Task succeeded
+ 2400.451 D Finished loading status JSON.
+ 2400.451 D Status loading succeeded.
+ 2460.288 D "Status JSON"  started.
+ 2460.288 D Downloading  "http://status.mojang.com/check"
+ 2460.465 D "Status JSON" succeeded.
+ 2460.465 D Task succeeded
+ 2460.465 D Finished loading status JSON.
+ 2460.465 D Status loading succeeded.
+ 2520.288 D "Status JSON"  started.
+ 2520.288 D Downloading  "http://status.mojang.com/check"
+ 2520.470 D "Status JSON" succeeded.
+ 2520.470 D Task succeeded
+ 2520.470 D Finished loading status JSON.
+ 2520.470 D Status loading succeeded.
+ 2580.288 D "Status JSON"  started.
+ 2580.288 D Downloading  "http://status.mojang.com/check"
+ 2580.468 D "Status JSON" succeeded.
+ 2580.468 D Task succeeded
+ 2580.468 D Finished loading status JSON.
+ 2580.468 D Status loading succeeded.
+ 2640.291 D "Status JSON"  started.
+ 2640.291 D Downloading  "http://status.mojang.com/check"
+ 2640.521 D "Status JSON" succeeded.
+ 2640.521 D Task succeeded
+ 2640.521 D Finished loading status JSON.
+ 2640.521 D Status loading succeeded.
+ 2648.952 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/texturepacks"
+ 2648.952 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/coremods"
+ 2648.952 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 2648.952 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 2700.305 D "Status JSON"  started.
+ 2700.305 D Downloading  "http://status.mojang.com/check"
+ 2700.475 D "Status JSON" succeeded.
+ 2700.475 D Task succeeded
+ 2700.475 D Finished loading status JSON.
+ 2700.475 D Status loading succeeded.
+ 2710.255 W Order file doesn't exist. Ignoring.
+ 2710.255 D Reading "net.minecraftforge.json"
+ 2730.734 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/texturepacks"
+ 2730.734 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/resourcepacks"
+ 2730.734 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/coremods"
+ 2730.734 D Failed to stop watching  "C:/Users/Admin/Desktop/MultiMC/instances/Solyanka/minecraft/mods"
+ 2760.319 D "Status JSON"  started.
+ 2760.319 D Downloading  "http://status.mojang.com/check"
+ 2760.499 D "Status JSON" succeeded.
+ 2760.499 D Task succeeded
+ 2760.499 D Finished loading status JSON.
+ 2760.499 D Status loading succeeded.
+ 2820.335 D "Status JSON"  started.
+ 2820.335 D Downloading  "http://status.mojang.com/check"
+ 2820.515 D "Status JSON" succeeded.
+ 2820.515 D Task succeeded
+ 2820.515 D Finished loading status JSON.
+ 2820.515 D Status loading succeeded.
+ 2880.340 D "Status JSON"  started.
+ 2880.340 D Downloading  "http://status.mojang.com/check"
+ 2880.515 D "Status JSON" succeeded.
+ 2880.515 D Task succeeded
+ 2880.515 D Finished loading status JSON.
+ 2880.515 D Status loading succeeded.
+ 2940.338 D "Status JSON"  started.
+ 2940.338 D Downloading  "http://status.mojang.com/check"
+ 2940.528 D "Status JSON" succeeded.
+ 2940.528 D Task succeeded
+ 2940.528 D Finished loading status JSON.
+ 2940.528 D Status loading succeeded.
+ 3000.334 D "Status JSON"  started.
+ 3000.334 D Downloading  "http://status.mojang.com/check"
+ 3000.526 D "Status JSON" succeeded.
+ 3000.526 D Task succeeded
+ 3000.526 D Finished loading status JSON.
+ 3000.526 D Status loading succeeded.
+ 3060.349 D "Status JSON"  started.
+ 3060.349 D Downloading  "http://status.mojang.com/check"
+ 3060.509 D "Status JSON" succeeded.
+ 3060.509 D Task succeeded
+ 3060.509 D Finished loading status JSON.
+ 3060.509 D Status loading succeeded.
+ 3120.364 D "Status JSON"  started.
+ 3120.364 D Downloading  "http://status.mojang.com/check"
+ 3120.534 D "Status JSON" succeeded.
+ 3120.534 D Task succeeded
+ 3120.534 D Finished loading status JSON.
+ 3120.534 D Status loading succeeded.
+ 3180.351 D "Status JSON"  started.
+ 3180.351 D Downloading  "http://status.mojang.com/check"
+ 3180.531 D "Status JSON" succeeded.
+ 3180.531 D Task succeeded
+ 3180.531 D Finished loading status JSON.
+ 3180.531 D Status loading succeeded.
+ 3240.356 D "Status JSON"  started.
+ 3240.356 D Downloading  "http://status.mojang.com/check"
+ 3240.526 D "Status JSON" succeeded.
+ 3240.526 D Task succeeded
+ 3240.526 D Finished loading status JSON.
+ 3240.526 D Status loading succeeded.
+ 3300.351 D "Status JSON"  started.
+ 3300.351 D Downloading  "http://status.mojang.com/check"
+ 3300.578 D "Status JSON" succeeded.
+ 3300.578 D Task succeeded
+ 3300.578 D Finished loading status JSON.
+ 3300.578 D Status loading succeeded.
+ 3360.358 D "Status JSON"  started.
+ 3360.358 D Downloading  "http://status.mojang.com/check"
+ 3360.549 D "Status JSON" succeeded.
+ 3360.549 D Task succeeded
+ 3360.549 D Finished loading status JSON.
+ 3360.549 D Status loading succeeded.
+ 3420.357 D "Status JSON"  started.
+ 3420.357 D Downloading  "http://status.mojang.com/check"
+ 3420.541 D "Status JSON" succeeded.
+ 3420.541 D Task succeeded
+ 3420.541 D Finished loading status JSON.
+ 3420.541 D Status loading succeeded.
+ 3480.356 D "Status JSON"  started.
+ 3480.356 D Downloading  "http://status.mojang.com/check"
+ 3480.526 D "Status JSON" succeeded.
+ 3480.526 D Task succeeded
+ 3480.526 D Finished loading status JSON.
+ 3480.526 D Status loading succeeded.
+ 3540.355 D "Status JSON"  started.
+ 3540.355 D Downloading  "http://status.mojang.com/check"
+ 3540.535 D "Status JSON" succeeded.
+ 3540.535 D Task succeeded
+ 3540.535 D Finished loading status JSON.
+ 3540.535 D Status loading succeeded.
