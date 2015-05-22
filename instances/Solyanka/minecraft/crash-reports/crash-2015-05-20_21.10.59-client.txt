@@ -1,0 +1,266 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 5/20/15 9:11 PM
+Description: Initializing game
+
+java.lang.IllegalStateException: There is a biome ID conflict between a biome from Dimensional Doors and another biome type. Fix your configuration!
+	at StevenDimDoors.mod_pocketDim.world.DDBiomeGenBase.checkBiomes(DDBiomeGenBase.java:30)
+	at StevenDimDoors.mod_pocketDim.mod_pocketDim.onInitialization(mod_pocketDim.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:530)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:691)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:299)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:541)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at StevenDimDoors.mod_pocketDim.world.DDBiomeGenBase.checkBiomes(DDBiomeGenBase.java:30)
+	at StevenDimDoors.mod_pocketDim.mod_pocketDim.onInitialization(mod_pocketDim.java:226)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:530)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:691)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:299)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:541)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 520152280 bytes (496 MB) / 1056309248 bytes (1007 MB) up to 2104885248 bytes (2007 MB)
+	Mod Pack: Unknown / None
+	LiteLoader Mods: 2 loaded mod(s)
+          - MAtmos version r28 for 1.7.10
+          - VoxelMap version 1.5.13
+	LaunchWrapper: 42 active transformer(s)
+          - Transformer: cpw.mods.fml.common.asm.transformers.PatchingTransformer
+          - Transformer: optifine.OptiFineClassTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.MarkerTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.SideTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+          - Transformer: net.minecraftforge.classloading.FluidIdTransformer
+          - Transformer: am2.preloader.BytecodeTransformers
+          - Transformer: mods.defeatedcrow.asm.PotionArrayEXTransformer2
+          - Transformer: mods.defeatedcrow.asm.PotionEffectTransformer
+          - Transformer: appeng.transformer.asm.ASMIntegration
+          - Transformer: codechicken.lib.asm.ClassHeirachyManager
+          - Transformer: codechicken.core.asm.InterfaceDependancyTransformer
+          - Transformer: codechicken.core.asm.TweakTransformer
+          - Transformer: codechicken.core.asm.DelegatedTransformer
+          - Transformer: codechicken.core.asm.DefaultImplementationTransformer
+          - Transformer: atomicstryker.dynamiclights.common.DLTransformer
+          - Transformer: micdoodle8.mods.miccore.MicdoodleTransformer
+          - Transformer: atomicstryker.multimine.common.fmlmagic.MMTransformer
+          - Transformer: codechicken.nei.asm.NEITransformer
+          - Transformer: ak.potionextension.asm.PotionEffectTransformer
+          - Transformer: ak.potionextension.asm.PotionArrayTransformer
+          - Transformer: com.mumfrey.liteloader.transformers.event.EventProxyTransformer
+          - Transformer: com.mumfrey.liteloader.launch.LiteLoaderTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.CrashReportTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.AccessTransformer
+          - Transformer: net.minecraftforge.transformers.ForgeAccessTransformer
+          - Transformer: appeng.transformer.asm.ASMTweaker
+          - Transformer: codechicken.core.asm.CodeChickenAccessTransformer
+          - Transformer: micdoodle8.mods.miccore.MicdoodleAccessTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAccessTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ItemStackTransformer
+          - Transformer: lumien.extendedpotions.asm.ClassTransformer
+          - Transformer: com.gildedgames.util.threadedlighting.asm.TLTransformer
+          - Transformer: lumien.hardcoredarkness.asm.ClassTransformer
+          - Transformer: fastcraft.a.k
+          - Transformer: cpw.mods.fml.common.asm.transformers.TerminalTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.LiteLoaderEventInjectionTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.MinecraftOverlayTransformer
+          - Transformer: com.mumfrey.liteloader.common.transformers.LiteLoaderPacketTransformer
+          - Transformer: com.thevoxelbox.voxelmap.litemod.VoxelMapTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAPITransformer
+	JVM Flags: 6 total; -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1024m -Xmx2024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.114.1388 Minecraft Forge 10.13.3.1388 Optifine OptiFine_1.7.10_HD_U_B7 78 mods loaded, 78 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	FML{7.10.114.1388} [Forge Mod Loader] (forge-1.7.10-10.13.3.1388-1.7.10-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Forge{10.13.3.1388} [Minecraft Forge] (forge-1.7.10-10.13.3.1388-1.7.10-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AM2-Preloader{0.0.2} [AMCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AppleMilkCore{1.0.3} [AppleMilkCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	appliedenergistics2-core{rv2-stable-3} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	CodeChickenCore{1.0.6.44} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NotEnoughItems{1.0.4.107} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.107-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	PotionExtensionCore{1.0.4-forMC1.7} [PotionExtensionCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	mod_ThreadedLighting{1.7.10-1.0} [Threaded Lighting] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	FastCraft{1.22} [FastCraft] (fastcraft-1.22-ctest7.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExtendedPotions{1.1} [Extended Potions] (ExtendedPotions-MC1.7.10-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	gilded-games-util{1.7.10-1.1} [Gilded Games Utility] (gilded-games-util.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AnimationAPI{1.2.4} [AnimationAPI] (AnimationAPI-1.7.10-1.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	arsmagica2{1.4.0.008} [Ars Magica 2] (1.7.10_AM2-1.4.0.008.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Core{6.4.15} [BuildCraft] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Energy{6.4.15} [BC Energy] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	IC2{2.2.722-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.722-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	GalacticraftCore{3.0.12} [Galacticraft Core] (GalacticraftCore-1.7-3.0.12.339.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceCore{4.1.6} [4Space Core] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceCallisto{4.1.6} [4Space Callisto] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceEuropa{4.1.6} [4Space Europa] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExoPlanets{0.0.1} [4Space ExoPlanets] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceHole{4.1.6} [4Space Worm Hole] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceVenus{4.1.6} [4Space Venus] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceIo{4.1.6} [4Space Io] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpaceMercury{4.1.6} [4Space Mercury] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	SpacePluto{4.1.6} [4Space Pluto] (4Space-4.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	aether{Alpha 1.7.10-1.4} [Aether II] (aether.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft-1.7.10-4.2.3.5.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AetherAspects{Alpha 1.7.10-1.2} [Aether Aspects] (AetherAspects-1.7.10-1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DCsAppleMilk{1.7.10_2.6d} [Apple&Milk&Tea!] (AppleMilkTea2-1.7.10_2.6d.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	appliedenergistics2{rv2-stable-3} [Applied Energistics 2] (appliedenergistics2-rv2-stable-3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	betterstorage{0.13.1.126} [BetterStorage] (BetterStorage-1.7.10-0.13.1.126.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BetterTitleScreen{1.7.10-1.1} [Better Title Screen] (BetterTitleScreen-1.7.10-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiblioCraft{1.10.4} [BiblioCraft] (BiblioCraft[v1.10.4][MC1.7.10].jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.1283-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiblioWoodsBoP{1.9} [BiblioWoods Biomes O'Plenty Edition] (BiblioWoods[BiomesOPlenty][v1.9].jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExtrabiomesXL{3.16.2} [ExtrabiomesXL] (extrabiomesxl_1.7.10-3.16.2.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiblioWoodsEBXL{1.4} [BiblioWoods ExtraBiomesXL Edition] (BiblioWoods[ExtraBiomesXL][v1.4].jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Forestry{3.5.6.15} [Forestry for Minecraft] (forestry_1.7.10-3.5.6.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BinnieCore{2.0-pre8} [Binnie Core] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Botany{2.0-pre8} [Botany] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExtraBees{2.0-pre8} [Extra Bees] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExtraTrees{2.0-pre8} [Extra Trees] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Genetics{2.0-pre8} [Genetics] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AWWayofTime{v1.3.2} [Blood Magic: Alchemical Wizardry] (BloodMagic-1.7.10-1.3.2-1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Botania{r1.6-190} [Botania] (Botania r1.6-190.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Builders{6.4.15} [BC Builders] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Factory{6.4.15} [BC Factory] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Transport{6.4.15} [BC Transport] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Silicon{6.4.15} [BC Silicon] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal (1).jar) Unloaded->Constructed->Pre-initialized->Initialized
+	chisel{2.3.10.37} [Chisel 2] (Chisel2-2.3.10.37.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	dimdoors{2.2.5-test} [Dimensional Doors] (DimensionalDoors-2.2.5-test8.jar) Unloaded->Constructed->Pre-initialized->Errored
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	examplemod{1.0} [examplemod] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	EMT{2.0.0Alpha4} [Electro-Magic Tools] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Enchiridion{1.1} [Enchiridion] (Enchiridion 2-1.7.10-2.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Enchiridion2{2.0.1} [Enchiridion 2] (Enchiridion 2-1.7.10-2.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	EnderStorage{1.4.7.36} [EnderStorage] (EnderStorage-1.7.10-1.4.7.36-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	GalacticraftMars{3.0.12} [Galacticraft Planets] (Galacticraft-Planets-1.7-3.0.12.339.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	HardcoreDarkness{1.4} [Hardcore Darkness] (HardcoreDarkness-1.4.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AS_MultiMine{1.4.3} [Multi Mine] (MultiMine-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Translocator{1.1.1.14} [Translocator] (Translocator-1.7.10-1.1.1.14-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AS_UpdateCheck{1.1.6} [AtomicStryker Update Check Mod] (UpdateCheckerMod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AE2 Version: stable rv2-stable-3 for Forge 10.13.2.1291
+	Forestry : Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Optifine
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	Launched Version: MultiMC5
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTS 450/PCIe/SSE2 GL version 4.5.0 NVIDIA 350.12, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [msi_conversion.zip, LocalizationsForMCFMods.v.0.0.2.zip, F32-1.7.10______20.05.15.zip]
+	Current Language: Русский (Россия)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

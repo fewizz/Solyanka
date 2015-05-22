@@ -1380,7 +1380,9 @@
       1398,
       1402,
       1404,
-      1405
+      1405,
+      1409,
+      1410
     ]
   },
   "name": "Minecraft Forge",
@@ -41984,6 +41986,84 @@
       "mcversion": "1.7.10",
       "modified": 1431873710.0,
       "version": "10.13.3.1408"
+    },
+    "1409": {
+      "branch": null,
+      "build": 1409,
+      "files": [
+        [
+          "zip",
+          "src",
+          "9843048f420b91de8eba9b5b7c1ffa58"
+        ],
+        [
+          "txt",
+          "changelog",
+          "236b48fe057371f2fb7055f5e198f6f6"
+        ],
+        [
+          "jar",
+          "universal",
+          "53cb91ef6c0b7cf2178b9716f3c6830f"
+        ],
+        [
+          "jar",
+          "userdev",
+          "da1cdc6d4e2c3bcb43d7d9bc4f0046d3"
+        ],
+        [
+          "exe",
+          "installer-win",
+          "b77bf9c2ca31678b5b0e8fd372cd83c6"
+        ],
+        [
+          "jar",
+          "installer",
+          "9717cf46f5f4da173340e20e9f0317d7"
+        ]
+      ],
+      "mcversion": "1.8",
+      "modified": 1431900077.0,
+      "version": "11.14.1.1409"
+    },
+    "1410": {
+      "branch": null,
+      "build": 1410,
+      "files": [
+        [
+          "zip",
+          "src",
+          "4324c17dc212b1b742f618fe3c17d9a4"
+        ],
+        [
+          "txt",
+          "changelog",
+          "a4e80651ba25261eee1e0ab99f8e7364"
+        ],
+        [
+          "jar",
+          "universal",
+          "f142faa1f3b71b2f2494f9315f914f36"
+        ],
+        [
+          "jar",
+          "userdev",
+          "3c79432b89d06c8dd654772443c5bc84"
+        ],
+        [
+          "exe",
+          "installer-win",
+          "c488e24449dbf199d394bbac49ee6a51"
+        ],
+        [
+          "jar",
+          "installer",
+          "a088773bcc9f9cba16163dc10b00fc93"
+        ]
+      ],
+      "mcversion": "1.8",
+      "modified": 1431969255.0,
+      "version": "11.14.1.1410"
     }
   },
   "promos": {
@@ -42000,9 +42080,9 @@
     "1.7.10-recommended": 1291,
     "1.7.2-latest": 1147,
     "1.7.2-recommended": 1121,
-    "1.8-latest": 1405,
+    "1.8-latest": 1410,
     "1.8-recommended": 1334,
-    "latest": 1405,
+    "latest": 1410,
     "latest-1.7.10": 1343,
     "recommended": 1334
   },

@@ -2,8 +2,12 @@
   "mods": {
     "MultiMC5": {
       "baubles-1.7.10-1.0.1.10.jar": true,
+      "codechickenlib-1.7.10-1.1.3.136-universal.jar": true,
       "eu.ha3.mc.matmos": true,
+      "forgemultipart-1.7.10-1.1.2.334-universal.jar": true,
+      "mrtjpcore-1.0.7.14-universal.jar": true,
       "newlaunch": true,
+      "potionextension-1.7.10-1.0.4.jar": true,
       "voxelmap": true
     }
   }

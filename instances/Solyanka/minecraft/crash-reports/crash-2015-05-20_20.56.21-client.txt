@@ -1,0 +1,193 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 5/20/15 8:56 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at animfix.FastTextureAtlasSprite.checkGLError(FastTextureAtlasSprite.java:130)
+	at animfix.FastTextureAtlasSprite.uploadTextureMaxMips(FastTextureAtlasSprite.java:120)
+	at animfix.FastTextureAtlasSprite.func_94219_l(FastTextureAtlasSprite.java:56)
+	at fastcraft.b.i.a(F:448)
+	at fastcraft.Hooks.h(F:91)
+	at net.minecraft.client.renderer.texture.TextureMap.func_110550_d(TextureMap.java:587)
+	at net.minecraft.client.renderer.texture.TextureManager.func_110550_d(TextureManager.java:154)
+	at TextureUtils.resourcesReloaded(TextureUtils.java:277)
+	at TextureUtils$1.func_110549_a(TextureUtils.java:305)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110542_a(SimpleReloadableResourceManager.java:130)
+	at TextureUtils.registerResourceListener(TextureUtils.java:309)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1188)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 793393512 bytes (756 MB) / 1056309248 bytes (1007 MB) up to 2104885248 bytes (2007 MB)
+	Mod Pack: Unknown / None
+	LiteLoader Mods: 2 loaded mod(s)
+          - MAtmos version r28 for 1.7.10
+          - VoxelMap version 1.5.13
+	LaunchWrapper: 43 active transformer(s)
+          - Transformer: cpw.mods.fml.common.asm.transformers.PatchingTransformer
+          - Transformer: optifine.OptiFineClassTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.MarkerTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.SideTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+          - Transformer: net.minecraftforge.classloading.FluidIdTransformer
+          - Transformer: am2.preloader.BytecodeTransformers
+          - Transformer: mods.defeatedcrow.asm.PotionArrayEXTransformer2
+          - Transformer: mods.defeatedcrow.asm.PotionEffectTransformer
+          - Transformer: appeng.transformer.asm.ASMIntegration
+          - Transformer: codechicken.lib.asm.ClassHeirachyManager
+          - Transformer: codechicken.core.asm.InterfaceDependancyTransformer
+          - Transformer: codechicken.core.asm.TweakTransformer
+          - Transformer: codechicken.core.asm.DelegatedTransformer
+          - Transformer: codechicken.core.asm.DefaultImplementationTransformer
+          - Transformer: atomicstryker.dynamiclights.common.DLTransformer
+          - Transformer: micdoodle8.mods.miccore.MicdoodleTransformer
+          - Transformer: atomicstryker.multimine.common.fmlmagic.MMTransformer
+          - Transformer: codechicken.nei.asm.NEITransformer
+          - Transformer: ak.potionextension.asm.PotionEffectTransformer
+          - Transformer: ak.potionextension.asm.PotionArrayTransformer
+          - Transformer: com.mumfrey.liteloader.transformers.event.EventProxyTransformer
+          - Transformer: com.mumfrey.liteloader.launch.LiteLoaderTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.CrashReportTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.AccessTransformer
+          - Transformer: net.minecraftforge.transformers.ForgeAccessTransformer
+          - Transformer: appeng.transformer.asm.ASMTweaker
+          - Transformer: codechicken.core.asm.CodeChickenAccessTransformer
+          - Transformer: micdoodle8.mods.miccore.MicdoodleAccessTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAccessTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ItemStackTransformer
+          - Transformer: animfix.asm.TextureMapTransformer
+          - Transformer: lumien.extendedpotions.asm.ClassTransformer
+          - Transformer: com.gildedgames.util.threadedlighting.asm.TLTransformer
+          - Transformer: lumien.hardcoredarkness.asm.ClassTransformer
+          - Transformer: fastcraft.a.k
+          - Transformer: cpw.mods.fml.common.asm.transformers.TerminalTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.LiteLoaderEventInjectionTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.MinecraftOverlayTransformer
+          - Transformer: com.mumfrey.liteloader.common.transformers.LiteLoaderPacketTransformer
+          - Transformer: com.thevoxelbox.voxelmap.litemod.VoxelMapTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAPITransformer
+	JVM Flags: 6 total; -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1024m -Xmx2024m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.3.1408 Optifine OptiFine_1.7.10_HD_U_B7 78 mods loaded, 78 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded
+	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.3.1408-1.7.10-universal.jar) Unloaded
+	Forge{10.13.3.1408} [Minecraft Forge] (forge-1.7.10-10.13.3.1408-1.7.10-universal.jar) Unloaded
+	AM2-Preloader{0.0.2} [AMCore] (minecraft.jar) Unloaded
+	AppleMilkCore{1.0.3} [AppleMilkCore] (minecraft.jar) Unloaded
+	appliedenergistics2-core{rv2-stable-3} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded
+	CodeChickenCore{1.0.6.44} [CodeChicken Core] (minecraft.jar) Unloaded
+	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) Unloaded
+	NotEnoughItems{1.0.4.107} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.107-universal.jar) Unloaded
+	PotionExtensionCore{1.0.4-forMC1.7} [PotionExtensionCore] (minecraft.jar) Unloaded
+	animfix{0.3} [Animated Texture Fix] (minecraft.jar) Unloaded
+	mod_ThreadedLighting{1.7.10-1.0} [Threaded Lighting] (minecraft.jar) Unloaded
+	FastCraft{1.22} [FastCraft] (fastcraft-1.22-ctest7.jar) Unloaded
+	arsmagica2{1.4.0.008} [Ars Magica 2] (1.7.10_AM2-1.4.0.008.jar) Unloaded
+	SpaceCallisto{4.1.6} [4Space Callisto] (4Space-4.1.6.jar) Unloaded
+	SpaceCore{4.1.6} [4Space Core] (4Space-4.1.6.jar) Unloaded
+	SpaceEuropa{4.1.6} [4Space Europa] (4Space-4.1.6.jar) Unloaded
+	ExoPlanets{0.0.1} [4Space ExoPlanets] (4Space-4.1.6.jar) Unloaded
+	SpaceHole{4.1.6} [4Space Worm Hole] (4Space-4.1.6.jar) Unloaded
+	SpaceIo{4.1.6} [4Space Io] (4Space-4.1.6.jar) Unloaded
+	SpaceMercury{4.1.6} [4Space Mercury] (4Space-4.1.6.jar) Unloaded
+	SpacePluto{4.1.6} [4Space Pluto] (4Space-4.1.6.jar) Unloaded
+	SpaceVenus{4.1.6} [4Space Venus] (4Space-4.1.6.jar) Unloaded
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1.jar) Unloaded
+	aether{Alpha 1.7.10-1.4} [Aether II] (aether.jar) Unloaded
+	AetherAspects{Alpha 1.7.10-1.2} [Aether Aspects] (AetherAspects-1.7.10-1.2.jar) Unloaded
+	AnimationAPI{1.2.4} [AnimationAPI] (AnimationAPI-1.7.10-1.2.4.jar) Unloaded
+	DCsAppleMilk{1.7.10_2.6d} [Apple&Milk&Tea!] (AppleMilkTea2-1.7.10_2.6d.jar) Unloaded
+	appliedenergistics2{rv2-stable-3} [Applied Energistics 2] (appliedenergistics2-rv2-stable-3.jar) Unloaded
+	betterstorage{0.13.1.126} [BetterStorage] (BetterStorage-1.7.10-0.13.1.126.jar) Unloaded
+	BetterTitleScreen{1.7.10-1.1} [Better Title Screen] (BetterTitleScreen-1.7.10-1.1.jar) Unloaded
+	BiblioCraft{1.10.4} [BiblioCraft] (BiblioCraft[v1.10.4][MC1.7.10].jar) Unloaded
+	BiblioWoodsBoP{1.9} [BiblioWoods Biomes O'Plenty Edition] (BiblioWoods[BiomesOPlenty][v1.9].jar) Unloaded
+	BiblioWoodsEBXL{1.4} [BiblioWoods ExtraBiomesXL Edition] (BiblioWoods[ExtraBiomesXL][v1.4].jar) Unloaded
+	Botany{2.0-pre8} [Botany] (binnie-mods-2.0-pre8.jar) Unloaded
+	BinnieCore{2.0-pre8} [Binnie Core] (binnie-mods-2.0-pre8.jar) Unloaded
+	ExtraBees{2.0-pre8} [Extra Bees] (binnie-mods-2.0-pre8.jar) Unloaded
+	ExtraTrees{2.0-pre8} [Extra Trees] (binnie-mods-2.0-pre8.jar) Unloaded
+	Genetics{2.0-pre8} [Genetics] (binnie-mods-2.0-pre8.jar) Unloaded
+	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.1283-universal.jar) Unloaded
+	AWWayofTime{v1.3.2} [Blood Magic: Alchemical Wizardry] (BloodMagic-1.7.10-1.3.2-1.jar) Unloaded
+	Botania{r1.6-190} [Botania] (Botania r1.6-190.jar) Unloaded
+	BuildCraft|Builders{6.4.15} [BC Builders] (buildcraft-6.4.15.jar) Unloaded
+	BuildCraft|Core{6.4.15} [BuildCraft] (buildcraft-6.4.15.jar) Unloaded
+	BuildCraft|Energy{6.4.15} [BC Energy] (buildcraft-6.4.15.jar) Unloaded
+	BuildCraft|Factory{6.4.15} [BC Factory] (buildcraft-6.4.15.jar) Unloaded
+	BuildCraft|Silicon{6.4.15} [BC Silicon] (buildcraft-6.4.15.jar) Unloaded
+	BuildCraft|Transport{6.4.15} [BC Transport] (buildcraft-6.4.15.jar) Unloaded
+	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal (1).jar) Unloaded
+	chisel{2.3.10.37} [Chisel 2] (Chisel2-2.3.10.37.jar) Unloaded
+	dimdoors{2.2.5-test} [Dimensional Doors] (DimensionalDoors-2.2.5-test8.jar) Unloaded
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded
+	examplemod{1.0} [examplemod] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded
+	EMT{2.0.0Alpha4} [Electro-Magic Tools] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded
+	Enchiridion{1.1} [Enchiridion] (Enchiridion 2-1.7.10-2.0.1.jar) Unloaded
+	Enchiridion2{2.0.1} [Enchiridion 2] (Enchiridion 2-1.7.10-2.0.1.jar) Unloaded
+	EnderStorage{1.4.7.36} [EnderStorage] (EnderStorage-1.7.10-1.4.7.36-universal.jar) Unloaded
+	ExtendedPotions{1.1} [Extended Potions] (ExtendedPotions-MC1.7.10-1.1.jar) Unloaded
+	ExtrabiomesXL{3.16.2} [ExtrabiomesXL] (extrabiomesxl_1.7.10-3.16.2.jar) Unloaded
+	GalacticraftMars{3.0.12} [Galacticraft Planets] (Galacticraft-Planets-1.7-3.0.12.339.jar) Unloaded
+	GalacticraftCore{3.0.12} [Galacticraft Core] (GalacticraftCore-1.7-3.0.12.339.jar) Unloaded
+	gilded-games-util{1.7.10-1.1} [Gilded Games Utility] (gilded-games-util.jar) Unloaded
+	HardcoreDarkness{1.4} [Hardcore Darkness] (HardcoreDarkness-1.4.jar) Unloaded
+	IC2{2.2.722-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.722-experimental.jar) Unloaded
+	AS_MultiMine{1.4.3} [Multi Mine] (MultiMine-1.7.10.jar) Unloaded
+	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft-1.7.10-4.2.3.5.jar) Unloaded
+	Translocator{1.1.1.14} [Translocator] (Translocator-1.7.10-1.1.1.14-universal.jar) Unloaded
+	AS_UpdateCheck{1.1.6} [AtomicStryker Update Check Mod] (UpdateCheckerMod-1.7.10.jar) Unloaded
+	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) Unloaded
+	Launched Version: MultiMC5
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTS 450/PCIe/SSE2 GL version 4.5.0 NVIDIA 350.12, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [msi_conversion.zip, LocalizationsForMCFMods.v.0.0.2.zip, F32-1.7.10______20.05.15.zip]
+	Current Language: Русский (Россия)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

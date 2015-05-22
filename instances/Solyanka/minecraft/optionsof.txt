@@ -1,5 +1,5 @@
 ofRenderDistanceChunks:6
-ofFogType:2
+ofFogType:3
 ofFogStart:0.4
 ofMipmapType:0
 ofLoadFar:false
@@ -43,7 +43,7 @@ ofSunMoon:true
 ofChunkUpdates:1
 ofChunkLoading:2
 ofChunkUpdatesDynamic:false
-ofTime:0
+ofTime:2
 ofClearWater:false
 ofDepthFog:true
 ofAaLevel:0

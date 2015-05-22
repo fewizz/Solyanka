@@ -192,6 +192,21 @@
         },
         {
             "base": "libraries",
+            "etag": "\"5535b68b-2b28fc\"",
+            "last_changed_timestamp": 1432145300445,
+            "md5sum": "1729fab00b0075bc2e9eb485ef74bd85",
+            "path": "net/minecraftforge/forge/1.7.10-10.13.3.1388-1.7.10/forge-1.7.10-10.13.3.1388-1.7.10-universal.jar",
+            "remote_changed_timestamp": "Tue, 21 Apr 2015 02:31:39 GMT"
+        },
+        {
+            "base": "libraries",
+            "etag": "",
+            "last_changed_timestamp": 0,
+            "md5sum": "1729fab00b0075bc2e9eb485ef74bd85",
+            "path": "net/minecraftforge/forge/1.7.10-10.13.3.1388-1.7.10/forge-1.7.10-10.13.3.1388-1.7.10.jar"
+        },
+        {
+            "base": "libraries",
             "etag": "\"5558a8ae-2d980c\"",
             "last_changed_timestamp": 1431880266740,
             "md5sum": "165a32713c760aa2ed2e52581ac1d6cc",
@@ -201,7 +216,7 @@
         {
             "base": "libraries",
             "etag": "",
-            "last_changed_timestamp": 0,
+            "last_changed_timestamp": 1431879937327,
             "md5sum": "165a32713c760aa2ed2e52581ac1d6cc",
             "path": "net/minecraftforge/forge/1.7.10-10.13.3.1408-1.7.10/forge-1.7.10-10.13.3.1408-1.7.10.jar"
         },
@@ -414,6 +429,14 @@
         },
         {
             "base": "minecraftforge",
+            "etag": "\"5535b68b-30ba0e\"",
+            "last_changed_timestamp": 1432145283085,
+            "md5sum": "d9441cd1a3ad238547eea5ba527781d1",
+            "path": "forge-1.7.10-10.13.3.1388-1.7.10-installer.jar",
+            "remote_changed_timestamp": "Tue, 21 Apr 2015 02:31:39 GMT"
+        },
+        {
+            "base": "minecraftforge",
             "etag": "\"5558a8ae-342549\"",
             "last_changed_timestamp": 1431879937261,
             "md5sum": "f6a4e52233c52a91553b1aff58bb02f2",
@@ -422,11 +445,11 @@
         },
         {
             "base": "minecraftforge",
-            "etag": "\"5558a8b0-d0077\"",
-            "last_changed_timestamp": 1431879914641,
-            "md5sum": "3b93d21c09c069aa1695c8ee6ab6afd2",
+            "etag": "\"555a1dea-d06e5\"",
+            "last_changed_timestamp": 1432145263563,
+            "md5sum": "70192258dea98672989bafc90f88f8fa",
             "path": "json",
-            "remote_changed_timestamp": "Sun, 17 May 2015 14:41:52 GMT"
+            "remote_changed_timestamp": "Mon, 18 May 2015 17:14:18 GMT"
         },
         {
             "base": "minecraftforge",
@@ -455,7 +478,7 @@
         {
             "base": "skins",
             "etag": "",
-            "last_changed_timestamp": 1432134325080,
+            "last_changed_timestamp": 1432229170399,
             "md5sum": "b3c992cce983187e115faec2b51af2cc",
             "path": "bmoe15.png"
         },
