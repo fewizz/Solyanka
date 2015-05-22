@@ -3,3 +3,4 @@ accounts.json
 /instances/Solyanka/minecraft/logs/*
 *.log
 usernamecache.json
+/accounts/skins/*

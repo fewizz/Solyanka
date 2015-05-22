@@ -1,4 +1,4 @@
-ofRenderDistanceChunks:6
+ofRenderDistanceChunks:4
 ofFogType:3
 ofFogStart:0.4
 ofMipmapType:0
@@ -8,10 +8,10 @@ ofOcclusionFancy:false
 ofSmoothFps:false
 ofSmoothWorld:false
 ofAoLevel:1.0
-ofClouds:1
+ofClouds:0
 ofCloudsHeight:0.0
-ofTrees:1
-ofGrass:2
+ofTrees:0
+ofGrass:1
 ofDroppedItems:1
 ofRain:2
 ofWater:1
@@ -55,8 +55,8 @@ ofSmoothBiomes:false
 ofCustomFonts:false
 ofCustomColors:false
 ofCustomSky:false
-ofShowCapes:true
-ofNaturalTextures:true
+ofShowCapes:false
+ofNaturalTextures:false
 ofLazyChunkLoading:false
 ofFullscreenMode:Default
 ofFastMath:true
