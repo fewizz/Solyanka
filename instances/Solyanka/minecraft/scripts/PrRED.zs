@@ -1,0 +1,1 @@
+recipes.remove(<ProjRed|Exploration:projectred.exploraion.axeruby>);

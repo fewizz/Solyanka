@@ -1,0 +1,378 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 5/24/15 7:03 PM
+Description: Registering texture
+
+java.lang.OutOfMemoryError: Registering texture
+	at java.util.zip.Inflater.inflateBytes(Native Method)
+	at java.util.zip.Inflater.inflate(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.decodePass(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.decodeImage(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.read(Unknown Source)
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at net.minecraft.client.renderer.texture.TextureMap.func_110571_b(TextureMap.java:187)
+	at net.minecraft.client.renderer.texture.TextureMap.func_110551_a(TextureMap.java:124)
+	at net.minecraft.client.renderer.texture.TextureManager.func_110579_a(TextureManager.java:94)
+	at net.minecraft.client.renderer.texture.TextureManager.func_110549_a(TextureManager.java:200)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:143)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:121)
+	at net.minecraft.client.Minecraft.func_110436_a(Minecraft.java:617)
+	at net.minecraft.client.gui.GuiLanguage$List.func_148144_a(SourceFile:110)
+	at net.minecraft.client.gui.GuiSlot.func_148128_a(GuiSlot.java:209)
+	at net.minecraft.client.gui.GuiLanguage.func_73863_a(SourceFile:77)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1358)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.zip.Inflater.inflateBytes(Native Method)
+	at java.util.zip.Inflater.inflate(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.decodePass(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.decodeImage(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.readImage(Unknown Source)
+	at com.sun.imageio.plugins.png.PNGImageReader.read(Unknown Source)
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at javax.imageio.ImageIO.read(Unknown Source)
+	at net.minecraft.client.renderer.texture.TextureMap.func_110571_b(TextureMap.java:187)
+	at net.minecraft.client.renderer.texture.TextureMap.func_110551_a(TextureMap.java:124)
+
+-- Resource location being registered --
+Details:
+	Resource location: minecraft:textures/atlas/blocks.png
+	Texture object class: net.minecraft.client.renderer.texture.TextureMap
+Stacktrace:
+	at net.minecraft.client.renderer.texture.TextureManager.func_110579_a(TextureManager.java:94)
+	at net.minecraft.client.renderer.texture.TextureManager.func_110549_a(TextureManager.java:200)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110544_b(SimpleReloadableResourceManager.java:143)
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.func_110541_a(SimpleReloadableResourceManager.java:121)
+	at net.minecraft.client.Minecraft.func_110436_a(Minecraft.java:617)
+	at net.minecraft.client.gui.GuiLanguage$List.func_148144_a(SourceFile:110)
+	at net.minecraft.client.gui.GuiSlot.func_148128_a(GuiSlot.java:209)
+	at net.minecraft.client.gui.GuiLanguage.func_73863_a(SourceFile:77)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.GuiLanguage
+	Mouse location: Scaled: (356, 230). Absolute: (736, 431)
+	Screen size: Scaled: (720, 450). Absolute: (1440, 900). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [GCEntityClientPlayerMP['bmoe15'/2504, l='MpServer', x=299.57, y=5.62, z=1418.29]]
+	Chunk stats: MultiplayerChunkCache: 81, 90
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (265,4,1427), Chunk: (at 9,0,3 in 16,89; contains blocks 256,0,1424 to 271,255,1439), Region: (0,2; contains chunks 0,64 to 31,95, blocks 0,0,1024 to 511,255,1535)
+	Level time: 5341 game time, 5341 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 70 total; [EntityBat['Bat'/38427, l='MpServer', x=287.25, y=6.00, z=1351.19], EntityVillager['Villager'/2347, l='MpServer', x=252.90, y=5.00, z=1348.12], EntityVillager['Villager'/2348, l='MpServer', x=253.66, y=5.00, z=1348.79], EntityVillager['Villager'/2349, l='MpServer', x=253.67, y=5.00, z=1366.38], EntityVillager['Villager'/2350, l='MpServer', x=274.22, y=5.00, z=1376.53], EntityVillager['Villager'/2351, l='MpServer', x=271.28, y=4.00, z=1379.66], EntityVillager['Villager'/2352, l='MpServer', x=263.50, y=4.00, z=1377.25], EntityVillager['Villager'/2355, l='MpServer', x=285.25, y=4.00, z=1354.72], EntityHat['unknown'/41523, l='MpServer', x=289.75, y=5.00, z=1349.69], EntityVillager['Villager'/2359, l='MpServer', x=279.50, y=5.00, z=1386.34], EntityVillager['Villager'/2360, l='MpServer', x=277.69, y=5.00, z=1383.75], EntityVillager['Villager'/2361, l='MpServer', x=285.69, y=4.00, z=1387.53], EntityVillager['Villager'/2362, l='MpServer', x=281.50, y=5.00, z=1376.50], EntityVillager['Villager'/2363, l='MpServer', x=284.50, y=6.00, z=1399.22], EntityVillager['Villager'/2369, l='MpServer', x=297.38, y=6.00, z=1359.38], EntityVillager['Villager'/2372, l='MpServer', x=289.11, y=6.00, z=1350.61], EntityVillager['Villager'/2373, l='MpServer', x=288.88, y=5.00, z=1363.69], EntityVillager['Villager'/2374, l='MpServer', x=289.69, y=5.00, z=1362.47], EntityVillager['Villager'/2375, l='MpServer', x=296.50, y=5.00, z=1368.50], EntityVillager['Villager'/2376, l='MpServer', x=296.50, y=5.00, z=1369.50], EntityVillager['Villager'/2377, l='MpServer', x=300.50, y=5.00, z=1376.50], EntityVillager['Villager'/2379, l='MpServer', x=297.50, y=4.00, z=1406.50], EntityVillager['Villager'/2381, l='MpServer', x=289.34, y=4.00, z=1410.63], EntityVillager['Villager'/2382, l='MpServer', x=298.41, y=5.00, z=1412.78], EntityArrow['arrow'/51289, l='MpServer', x=343.06, y=4.00, z=1408.63], EntityVillager['Villager'/2395, l='MpServer', x=317.63, y=4.00, z=1375.31], EntityVillager['Villager'/2396, l='MpServer', x=312.50, y=5.00, z=1376.50], EntityVillager['Villager'/2397, l='MpServer', x=313.50, y=5.00, z=1376.50], EntityVillager['Villager'/2398, l='MpServer', x=315.53, y=5.00, z=1389.28], EntityVillager['Villager'/2399, l='MpServer', x=317.50, y=5.00, z=1384.50], EntityVillager['Villager'/2400, l='MpServer', x=310.56, y=5.00, z=1412.93], EntityVillager['Villager'/2401, l='MpServer', x=319.31, y=6.00, z=1412.31], EntityVillager['Villager'/2402, l='MpServer', x=316.75, y=4.00, z=1432.50], EntityVillager['Villager'/2403, l='MpServer', x=307.69, y=5.00, z=1433.59], EntityItemFrame['Item Frame'/2414, l='MpServer', x=329.94, y=7.50, z=1361.50], EntityItemFrame['Item Frame'/2415, l='MpServer', x=329.94, y=7.50, z=1362.50], EntityItemFrame['Item Frame'/2416, l='MpServer', x=329.94, y=7.50, z=1363.50], EntityItemFrame['Item Frame'/2417, l='MpServer', x=329.94, y=7.50, z=1364.50], EntityScent['entity.ZAMod.EntityScent.name'/52337, l='MpServer', x=324.41, y=4.00, z=1416.38], EntityScent['entity.ZAMod.EntityScent.name'/53361, l='MpServer', x=304.00, y=4.00, z=1418.09], EntityVillager['Villager'/2418, l='MpServer', x=330.97, y=5.00, z=1421.50], EntityItem['item.item.seeds'/26738, l='MpServer', x=301.56, y=5.13, z=1387.41], EntityVillager['Villager'/2419, l='MpServer', x=320.22, y=6.00, z=1411.31], EntityVillager['Villager'/2420, l='MpServer', x=329.50, y=5.00, z=1422.50], EntityVillager['Villager'/2421, l='MpServer', x=321.44, y=4.00, z=1422.81], EntityHat['unknown'/2693, l='MpServer', x=307.69, y=5.00, z=1433.59], EntityHat['unknown'/2694, l='MpServer', x=330.97, y=5.00, z=1421.50], EntityHat['unknown'/2695, l='MpServer', x=320.22, y=6.00, z=1411.31], EntityHat['unknown'/2696, l='MpServer', x=321.44, y=4.00, z=1422.81], EntityHat['unknown'/2697, l='MpServer', x=312.50, y=5.00, z=1376.50], EntityHat['unknown'/2698, l='MpServer', x=296.50, y=5.00, z=1369.50], EntityItem['item.item.seeds'/27018, l='MpServer', x=300.03, y=5.13, z=1382.34], EntityScent['entity.ZAMod.EntityScent.name'/51869, l='MpServer', x=326.81, y=4.00, z=1417.34], EntityBat['Bat'/53663, l='MpServer', x=289.75, y=5.00, z=1349.75], EntityBat['Bat'/28068, l='MpServer', x=282.25, y=4.00, z=1345.25], EntityItem['item.item.Corpse'/53931, l='MpServer', x=303.44, y=4.13, z=1416.28], EntityScent['entity.ZAMod.EntityScent.name'/53676, l='MpServer', x=303.59, y=4.00, z=1419.94], EntityIronGolem['Iron Golem'/22705, l='MpServer', x=284.19, y=4.00, z=1392.03], EntitySheep['Sheep'/2740, l='MpServer', x=301.50, y=4.00, z=1346.50], EntitySheep['Sheep'/2741, l='MpServer', x=300.78, y=4.00, z=1348.50], EntitySheep['Sheep'/2742, l='MpServer', x=299.47, y=4.00, z=1348.50], EntitySheep['Sheep'/2743, l='MpServer', x=301.50, y=4.00, z=1344.50], EntityBat['Bat'/41401, l='MpServer', x=289.75, y=5.00, z=1349.69], EntityGoblin['Hobgoblin'/2750, l='MpServer', x=255.34, y=4.00, z=1366.16], EntityBat['Bat'/37832, l='MpServer', x=287.88, y=5.00, z=1349.75], EntityScent['entity.ZAMod.EntityScent.name'/53960, l='MpServer', x=312.00, y=5.00, z=1424.00], GCEntityClientPlayerMP['bmoe15'/2504, l='MpServer', x=299.57, y=5.62, z=1418.29], EntityHat['unknown'/2506, l='MpServer', x=299.57, y=5.62, z=1418.29], EntityTrail['unknown'/2508, l='MpServer', x=299.57, y=5.62, z=1418.29], EntityScent['entity.ZAMod.EntityScent.name'/53462, l='MpServer', x=277.00, y=4.00, z=1444.00]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:919)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:170)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_45, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 861074832 bytes (821 MB) / 2694156288 bytes (2569 MB) up to 4206231552 bytes (4011 MB)
+	JVM Flags: 6 total; -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1024m -Xmx4028m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 12, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.3.1408 Optifine OptiFine_1.7.10_HD_U_B7 209 mods loaded, 209 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.3.1408-1.7.10-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Forge{10.13.3.1408} [Minecraft Forge] (forge-1.7.10-10.13.3.1408-1.7.10-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AM2-Preloader{0.0.2} [AMCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AppleMilkCore{1.0.3} [AppleMilkCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	appliedenergistics2-core{rv2-stable-3} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	bettersleepingcore{1.0} [Better Sleeping Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	CodeChickenCore{1.0.6.44} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MCVanillaTweaks{1.0} [Mariculture - Vanilla Tweaks] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MobiusCore{1.2.5} [MobiusCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NotEnoughItems{1.0.4.107} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.4.107-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	PotionExtensionCore{1.0.4-forMC1.7} [PotionExtensionCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	OpenModsCore{0.7.3} [OpenModsCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	mod_ThreadedLighting{1.7.10-1.0} [Threaded Lighting] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	FastCraft{1.22} [FastCraft] (fastcraft-1.22-ctest8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtendedPotions{1.1} [Extended Potions] (ExtendedPotions-MC1.7.10-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	gilded-games-util{1.7.10-1.1} [Gilded Games Utility] (gilded-games-util.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AnimationAPI{1.2.4} [AnimationAPI] (AnimationAPI-1.7.10-1.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	arsmagica2{1.4.0.008} [Ars Magica 2] (1.7.10_AM2-1.4.0.008.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	IC2{2.2.722-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.722-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] (AdvancedSolarPanel-1.7.10-3.5.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	aether{Alpha 1.7.10-1.4} [Aether II] (aether.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft-1.7.10-4.2.3.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AetherAspects{Alpha 1.7.10-1.2} [Aether Aspects] (AetherAspects-1.7.10-1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	nevermine{2.0.1} [AdventOfAscension] (AoA-2.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AppleCore{1.1.0} [AppleCore] (AppleCore-mc1.7.10-1.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DCsAppleMilk{1.7.10_2.6d} [Apple&Milk&Tea!] (AppleMilkTea2-1.7.10_2.6d.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	appliedenergistics2{rv2-stable-3} [Applied Energistics 2] (appliedenergistics2-rv2-stable-3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ATG{0.10.0} [Alternate Terrain Generation] (ATG-1.7.10-0.12.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	atum{0.6} [Atum] (Atum-1.7.10-0.6.60.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BaublesHud{1.0.0} [Baubles-Hud] (BaublesHud-1.7.10-1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	bettersleeping{1.7.10-0.10.0} [Better Sleeping] (BetterSleeping-1.7.10-0.10.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	betterstorage{0.13.1.126} [BetterStorage] (BetterStorage-1.7.10-0.13.1.126.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BetterTitleScreen{1.7.10-1.1} [Better Title Screen] (BetterTitleScreen-1.7.10-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BiblioCraft{1.10.4} [BiblioCraft] (BiblioCraft[v1.10.4][MC1.7.10].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	CoFHCore{1.7.10R3.0.2} [CoFH Core] (CoFHCore-[1.7.10]3.0.2-262.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThermalFoundation{1.7.10R1.0.0} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.0.0-81.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThermalExpansion{1.7.10R4.0.1} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.0.1-182.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BigReactors{0.4.3A} [Big Reactors] (BigReactors-0.4.3A.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Mantle{1.7.10-0.3.2.jenkins184} [Mantle] (Mantle-1.7.10-0.3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Natura{2.2.0} [Natura] (natura-1.7.10-DEV.e14a8c3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.1283-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Core{6.4.15} [BuildCraft] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Forestry{3.5.6.15} [Forestry for Minecraft] (forestry_1.7.10-3.5.6.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BinnieCore{2.0-pre8} [Binnie Core] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Botany{2.0-pre8} [Botany] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtraBees{2.0-pre8} [Extra Bees] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtraTrees{2.0-pre8} [Extra Trees] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Genetics{2.0-pre8} [Genetics] (binnie-mods-2.0-pre8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AWWayofTime{v1.3.2} [Blood Magic: Alchemical Wizardry] (BloodMagic-1.7.10-1.3.2-1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Botania{r1.6-190} [Botania] (Botania r1.6-190.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Builders{6.4.15} [BC Builders] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Energy{6.4.15} [BC Energy] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Factory{6.4.15} [BC Factory] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Transport{6.4.15} [BC Transport] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildCraft|Silicon{6.4.15} [BC Silicon] (buildcraft-6.4.15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal (1).jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Railcraft{9.6.1.0} [Railcraft] (Railcraft_1.7.10-9.6.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	TwilightForest{2.3.7} [The Twilight Forest] (twilightforest-1.7.10-2.3.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ForgeMultipart{1.1.2.334} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	chisel{2.3.10.37} [Chisel 2] (Chisel2-2.3.10.37.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ComputerCraft{1.73} [ComputerCraft] (ComputerCraft1.73.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	cookiecore{1.3.1} [Cookie Core] (CookieCore-1.7.10-1.3.1-8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	BuildMod{v1.0} [Build Mod] (CoroUtil-1.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	CoroAI{v1.0} [CoroAI] (CoroUtil-1.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtendedRenderer{v1.0} [Extended Renderer] (CoroUtil-1.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ConfigMod{v1.0} [Extended Mod Config] (CoroUtil-1.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights{1.3.8} [Dynamic Lights] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] (DynamicLights-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	examplemod{1.0} [examplemod] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	EMT{2.0.0Alpha4} [Electro-Magic Tools] (ElectroMagicTools-1.7.10-2.0.0Alpha2-CUSTOM.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Enchiridion{1.1} [Enchiridion] (Enchiridion 2-1.7.10-2.0.2-71.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Enchiridion2{2.0.2} [Enchiridion 2] (Enchiridion 2-1.7.10-2.0.2-71.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded{1.7.10R2.8.1B1} [MineFactory Reloaded] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MetallurgyCore{4.0.4} [Metallurgy Core] (MetallurgyCore-1.7.10-4.0.4.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GalacticraftCore{3.0.12} [Galacticraft Core] (GalacticraftCore-1.7-3.0.12.339.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Mekanism{8.1.2} [Mekanism] (Mekanism-1.7.10-8.1.2.229.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	EnderIO{1.7.10-2.2.8.381} [Ender IO] (EnderIO-1.7.10-2.2.8.381.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	EnderStorage{1.4.7.36} [EnderStorage] (EnderStorage-1.7.10-1.4.7.36-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	EnderZoo{1.7.10-1.0.11.28} [Ender Zoo] (EnderZoo-1.7.10-1.0.11.28.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	enviromine{1.3.117} [EnviroMine] (EnviroMine-1.3.117.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ESM{10.0.109} [Epic Siege Mod] (EpicSiegeMod-10.0.109.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtraPlanets{0.6.1} [ExtraPlanets] (ExtraPlanets-0.6.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtraUtilities{1.2.4c} [Extra Utilities] (extrautilities-1.2.4c.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Waila{1.5.10} [Waila] (Waila-1.5.10_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	TConstruct{1.7.10-1.8.5.build957} [Tinkers' Construct] (TConstruct-1.7.10-1.8.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Metallurgy{4.0.8} [Metallurgy 4] (Metallurgy-1.7.10-4.0.8.97.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	harvestcraft{1.7.10g} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10h.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineTweaker3{3.0.9B} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.9C.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	TSteelworks{1.7.10-1.1.0} [Tinkers' Steelworks] (TSteelworks-1.7.10-1.1.0-14.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ExtraTiC{1.4.4} [ExtraTiC] (ExtraTiC-1.7.10-1.4.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	factorization.notify{1.0} [Factorization Notification System] (Factorization-1.7.10-0.8.92.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	factorization.dimensionalSlice{0.8.92} [Factorization Dimensional Slices] (Factorization-1.7.10-0.8.92.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	factorization{0.8.92} [Factorization] (Factorization-1.7.10-0.8.92.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	factorization.misc{0.8.92} [Factorization Miscellaneous Nonsense] (Factorization-1.7.10-0.8.92.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] (ThaumicTinkerer-2.5-1.7.10-494.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ForbiddenMagic{1.7.10-0.562} [Forbidden Magic] (Forbidden Magic-1.7.10-0.562.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GalacticraftMars{3.0.12} [Galacticraft Planets] (Galacticraft-Planets-1.7-3.0.12.339.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GardenCore{1.7.10-1.6.2} [Garden Core] (GardenStuff-1.7.10-1.6.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GardenContainers{1.7.10-1.6.2} [Garden Containers] (GardenStuff-1.7.10-1.6.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GardenStuff{1.7.10-1.6.2} [Garden Stuff] (GardenStuff-1.7.10-1.6.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GardenTrees{1.7.10-1.6.2} [Garden Trees] (GardenStuff-1.7.10-1.6.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GraveStone{2.12.3} [GraveStone] (GraveStone-2.12.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GraviSuite{1.7.10-2.0.3} [Graviation Suite] (GraviSuite-1.7.10-2.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	iChunUtil{4.2.2} [iChunUtil] (iChunUtil-4.2.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	GraviGun{4.0.0-beta} [GraviGun] (GravityGun-4.0.0-beta.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	HardcoreDarkness{1.4} [Hardcore Darkness] (HardcoreDarkness-1.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	HardcoreEnderExpansion{1.8} [Hardcore Ender Expansion] (HardcoreEnderExpansion  MC-1.7.10  v1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Hats{4.0.1} [Hats] (Hats-4.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	IC2NuclearControl{2.2.5a-GoingForTheKill} [Nuclear Control 2] (IC2NuclearControl-2.2.5a-GoingForTheKill.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	IguanaTweaks{2B} [Iguana Tweaks] (IguanaTweaks-1.7.10-2B-snapshot-3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	inventorytweaks{1.59-dev-152-cf6e263} [Inventory Tweaks] (InventoryTweaks-1.59-dev-152.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ironchestminecarts{1.0.3} [Iron Chest Minecarts] (IronChestMinecarts-1.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	JABBA{1.2.1} [JABBA] (Jabba-1.2.1a_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	LookingGlass{0.0.1.01} [Looking Glass] (lookingglass-1.7.10-0.0.1.01.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MagicBees{1.7.10-2.3.1} [Magic Bees] (magicbees-1.7.10-2.3.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	malisiscore{1.7.10-0.11.4} [MalisisCore] (malisiscore-1.7.10-0.11.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	malisisdoors{1.7.10-1.7.1} [Malisis' Doors] (malisisdoors-1.7.10-1.7.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Mariculture{1.7.10-1.2.4.2a} [Mariculture] (Mariculture-Deluxe-1.7.10-1.2.4.2a.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MariTech{1.0} [Marine Technlogy] (Mariculture-Deluxe-1.7.10-1.2.4.2a.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MekanismGenerators{8.1.2} [MekanismGenerators] (MekanismGenerators-1.7.10-8.1.2.229.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MekanismTools{8.1.2} [MekanismTools] (MekanismTools-1.7.10-8.1.2.229.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatAppliedEnergistics{1.7.10R2.8.1B1} [MFR Compat: Applied Energistics] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatAtum{1.7.10R2.8.1B1} [MFR Compat: Atum] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatBackTools{1.7.10R2.8.1B1} [MFR Compat: BackTools] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatBuildCraft{1.7.10R2.8.1B1} [MFR Compat: BuildCraft] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatChococraft{1.7.10R2.8.1B1} [MFR Compat: Chococraft] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatExtraBiomes{1.7.10R2.8.1B1} [MFR Compat: ExtraBiomes] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatForestry{1.7.10R2.8.1B1} [MFR Compat: Forestry] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatForgeMicroblock{1.7.10R2.8.1B1} [MFR Compat: ForgeMicroblock] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatIC2{1.7.10R2.8.1B1} [MFR Compat: IC2] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Mystcraft{0.11.9.03} [Mystcraft] (mystcraft-1.7.10-0.11.9.03.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatMystcraft{1.7.10R2.8.1B1} [MFR Compat: Mystcraft] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MrTJPCoreMod{1.0.7.14} [MrTJPCore] (MrTJPCore-1.0.7.14-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Core{4.6.1.80} [ProjectRed] (ProjectRed-1.7.10-4.6.1.80-Base.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Exploration{4.6.1.80} [ProjectRed-Exploration] (ProjectRed-1.7.10-4.6.1.80-World.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatProjRed{1.7.10R2.8.1B1} [MFR Compat ProjectRed] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatRailcraft{1.7.10R2.8.1B1} [MFR Compat: Railcraft] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatSufficientBiomes{1.7.10R2.8.1B1} [MFR Compat: Sufficient Biomes] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatThaumcraft{1.7.10R2.8.1B1} [MFR Compat: Thaumcraft] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatThermalExpansion{1.7.10R2.8.1B1} [MFR Compat: Thermal Expansion] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatTConstruct{1.7.10R2.8.1B1} [MFR Compat: Tinkers' Construct] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatTwilightForest{1.7.10R2.8.1B1} [MFR Compat: TwilightForest] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	MineFactoryReloaded|CompatVanilla{1.7.10R2.8.1B1} [MFR Compat: Vanilla] (MineFactoryReloaded-[1.7.10]2.8.1B1-113.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	modtweaker2{0.8.2} [Mod Tweaker 2] (ModTweaker 2-0.8.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	morechisels{@VERSION@} [More Chisels] (MoreChisels-1.7.10-1.0-20.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AS_MultiMine{1.4.4} [Multi Mine] (MultiMine-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons{1.12.8.29} [NEI Addons] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons|AppEng{1.12.8.29} [NEI Addons: Applied Energistics 2] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons|Botany{1.12.8.29} [NEI Addons: Botany] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons|Forestry{1.12.8.29} [NEI Addons: Forestry] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons|CraftingTables{1.12.8.29} [NEI Addons: Crafting Tables] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEIAddons|ExNihilo{1.12.8.29} [NEI Addons: Ex Nihilo] (neiaddons-1.12.8.29-mc1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	neiintegration{1.0.9} [NEI Integration] (NEIIntegration-MC1.7.10-1.0.9.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	neresources{0.1.0.100} [Not Enough Resources] (NotEnoughResources-1.7.10-0.1.0.100.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	OpenMods{0.7.3} [OpenMods] (OpenModsLib-1.7.10-0.7.3-snapshot-362.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	OpenBlocks{1.4.3} [OpenBlocks] (OpenBlocks-1.7.10-1.4.3-snapshot-637.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	PneumaticCraft{1.6.9-73} [PneumaticCraft] (PneumaticCraft-1.7.10-1.6.9-73-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	PortalGun{4.0.0-beta-4} [PortalGun] (PortalGun-4.0.0-beta-4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Transmission{4.6.1.80} [ProjectRed-Transmission] (ProjectRed-1.7.10-4.6.1.80-Integration.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Transportation{4.6.1.80} [ProjectRed-Transportation] (ProjectRed-1.7.10-4.6.1.80-Mechanical_beta.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Compatibility{4.6.1.80} [ProjectRed-Compatibility] (ProjectRed-1.7.10-4.6.1.80-Compat.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Integration{4.6.1.80} [ProjectRed-Integration] (ProjectRed-1.7.10-4.6.1.80-Integration.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Illumination{4.6.1.80} [ProjectRed-Illumination] (ProjectRed-1.7.10-4.6.1.80-Lighting.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ProjRed|Expansion{4.6.1.80} [ProjectRed-Expansion] (ProjectRed-1.7.10-4.6.1.80-Mechanical_beta.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	RedstoneArsenal{1.7.10R1.1.0} [Redstone Arsenal] (RedstoneArsenal-[1.7.10]1.1.0-80.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	rftools{2.90} [RFTools] (rftools-2.90.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	spacore{01.05.05.00} [SpACore] (SpACore-1.7.10-01.05.05.00.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	SpecialMobs{3.1.1} [Special Mobs] (SpecialMobs-1.7.10-3.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	SpiceOfLife{1.2.3} [The Spice of Life] (SpiceOfLife-mc1.7.10-1.2.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	StorageDrawers{1.7.10-1.4.7} [Storage Drawers] (StorageDrawers-1.7.10-1.4.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	StorageDrawersNatura{1.7.10-1.0.0} [Storage Drawers: Natura Pack] (StorageDrawers-Natura-1.7.10-1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Sync{4.0.0} [Sync] (Sync-4.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	tcnodetracker{1.1.0} [TC Node Tracker] (tcnodetracker-1.7.10-1.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	thaumcraftneiplugin{1.7.10-1.7} [Thaumcraft NEI Plugin] (thaumcraftneiplugin-1.7.10-1.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	thaumicenergistics{0.8.10.2} [Thaumic Energistics] (thaumicenergistics-0.8.10.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThaumicExploration{0.6.0} [Thaumic Exploration] (ThaumicExploration-1.7.10-1.1-37.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	thaumicinfusion{4.002} [Thaumic Infusion] (ThaumicInfusion-4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ThermalDynamics{1.7.10R1.0.0} [Thermal Dynamics] (ThermalDynamics-[1.7.10]1.0.0-122.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	TiCTooltips{1.2.4} [TiC Tooltips] (TiCTooltips-mc1.7.10-1.2.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	TMechworks{0.2.14.100} [Tinkers' Mechworks] (TMechworks-1.7.10-0.2.14.100.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Translocator{1.1.1.14} [Translocator] (Translocator-1.7.10-1.1.1.14-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ttCore{MC1.7.10-0.1.1-76} [ttCore] (ttCore-MC1.7.10-0.1.1-76.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	UndergroundBiomes{0.7} [Underground Biomes Constructs] (UndergroundBiomesConstructs-1.7.2-0.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	AS_UpdateCheck{1.1.6} [AtomicStryker Update Check Mod] (UpdateCheckerMod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	VersionChecker{1.1.8} [Version Checker] (VersionChecker-1.1.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	WailaHarvestability{1.1.2} [Waila Harvestability] (WailaHarvestability-mc1.7.x-1.1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	wailaplugins{MC1.7.10-0.0.1-15} [WAILA Plugins] (WAILAPlugins-MC1.7.10-0.0.1-15.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	wawla{1.2.1} [What Are We Looking At] (Wawla-1.2.1_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	witchery{0.24.1} [Witchery] (witchery-1.7.10-0.24.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ZAMod{v1.9.5} [Zombie Awareness] (ZombieAwareness-1.9.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	McMultipart{1.1.2.334} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	HungerOverhaul{1.7.10-1.0.0.jenkins75} [Hunger Overhaul] (HungerOverhaul-1.7.10-1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	IguanaTweaksTConstruct{1.7.10-2.1.5.140} [Iguana Tinker Tweaks] (IguanaTinkerTweaks-1.7.10-2.1.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	NEI-Mystcraft-Plugin{02.01.03.00} [NEI Mystcraft Plugin] (MystNEI-Plugin-1.7.10-02.01.03.00.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	ForgeMicroblock{1.1.2.334} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.2.334-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	OpenModsLib class transformers: [stencil_patches:FINISHED],[movement_callback:FINISHED],[map_gen_fix:FINISHED],[gl_capabilities_hook:FINISHED],[player_render_hook:FINISHED]
+	Class transformer null safety: all safe
+	AE2 Version: stable rv2-stable-3 for Forge 10.13.2.1291
+	CoFHCore: -[1.7.10]3.0.2-262
+	ThermalFoundation: -[1.7.10]1.0.0-81
+	ThermalExpansion: -[1.7.10]4.0.1-182
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	MineFactoryReloaded: -[1.7.10]2.8.1B1-113
+	TConstruct Environment: Environment healthy.
+	RedstoneArsenal: -[1.7.10]1.1.0-80
+	ThermalDynamics: -[1.7.10]1.0.0-122
+	Stencil buffer state: Function set: GL30, pool: forge, bits: 8
+	Forestry : Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Optifine
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	AE2 Integration: IC2:ON, RotaryCraft:OFF, RC:ON, BC:ON, RF:ON, RFItem:ON, MFR:ON, DSU:ON, FZ:ON, FMP:ON, RB:OFF, CLApi:OFF, Waila:ON, InvTweaks:ON, NEI:ON, CraftGuide:OFF, Mekanism:ON, ImmibisMicroblocks:OFF, BetterStorage:ON
+	Launched Version: MultiMC5
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTS 450/PCIe/SSE2 GL version 4.5.0 NVIDIA 350.12, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [msi_conversion.zip, LocalizationsForMCFMods.v.0.0.2.zip, F32-1.7.10______20.05.15.zip]
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -8,9 +8,9 @@ ofOcclusionFancy:false
 ofSmoothFps:false
 ofSmoothWorld:false
 ofAoLevel:1.0
-ofClouds:0
+ofClouds:1
 ofCloudsHeight:0.0
-ofTrees:0
+ofTrees:1
 ofGrass:1
 ofDroppedItems:1
 ofRain:2

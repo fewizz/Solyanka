@@ -1,0 +1,11 @@
+recipes.remove(<IronChest:BlockIronChest>);
+recipes.remove(<IronChest:BlockIronChest:1>);
+recipes.remove(<IronChest:BlockIronChest:3>);
+recipes.remove(<IronChest:BlockIronChest:4>);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest>, <liquid:iron.molten>*1152, <minecraft:chest>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest>, <liquid:iron.molten>*576, <IronChest:BlockIronChest:3>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest:1>, <liquid:gold.molten>*1152, <IronChest:BlockIronChest>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest:1>, <liquid:gold.molten>*576, <IronChest:BlockIronChest:4>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest:3>, <liquid:copper.molten>*1152, <minecraft:chest>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest:4>, <liquid:silver.molten>*1152, <minecraft:chest>, true, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<IronChest:BlockIronChest:4>, <liquid:silver.molten>*576, <IronChest:BlockIronChest:3>, true, 1000);
